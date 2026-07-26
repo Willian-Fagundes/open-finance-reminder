@@ -1,0 +1,521 @@
+{
+    "arquivo_origem": "OpenBanking-Guia_Operacao_Diretorio_Central_v2.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": "Classificação da informação: Uso Interno\nGUIA DE OPERAÇÃO\nDO DIRETÓRIO\nCENTRAL\nRequisitos Mínimos e RecomendaçõesVersão 1.1.6 – 02/02/2022\n"
+        },
+        {
+            "pagina": 2,
+            "conteudo": "Classificação da informação: Uso Interno\nCONTEÚDO\nDO GUIA\n01.\nIntrodução\n02.\nRegistrando um usuário no Diretório\nETAPA 1: Registrando um usuário no Diretório\nETAPA 2: Verificando os dados informados\nETAPA 3: Confirmando o processo de registro\nETAPA 4: Confirmação da assinatura eletrônica\nETAPA 5: Análise e confirmação do Termo de Aceite\n03.\nAcessando uma Organisation\nETAPA 1: Exibindo detalhes de uma organização\nCadastramento de conglomerado\n04.\nCadastrando contatos de notificação\nETAPA 1: Cadastrando um novo contato"
+        },
+        {
+            "pagina": 3,
+            "conteudo": "Classificação da informação: Uso Interno\nCONTEÚDO\nDO GUIA\n05.\nCadastrando reivindicações de domínio de \nautoridade\nETAPA 1: Cadastrando uma nova reivindicação de domínio\n07.\nCadastrando um Authorisation Server\nETAPA 1: Criando um novo servidor de autorização\n08.\nCadastrando recursos de uma API\nETAPA 1: Cadastrando um novo recurso de uma API -\nFases 1, 2 e 3\nETAPA 2: Cadastrando um novo recurso de uma API com \ncertificação automática - Fase 4A\n06.\nCadastrando reivindicações de autoridade\nETAPA 1: Cadastrando uma nova reivindicação de domínio\nETAPA 2: Cadastrando um usuário de domínio de \nautorização"
+        },
+        {
+            "pagina": 4,
+            "conteudo": "Classificação da informação: Uso Interno\nCONTEÚDO\nDO GUIA\n12.\nCarregando certificados emitidos por \nautoridade de certificação em Produção \nETAPA 1: Carregando certificado de transporte\nETAPA 2: Carregando certificado de assinatura\n11.\nCriando certificados de transporte e assinatura \nem Sandbox\nETAPA 1: Criando um novo certificado de transporte\nETAPA 2: Criando um novo certificado de assinatura\n09.\nCriando um Software Statements\nETAPA 1: Criando uma nova declaração de software\n10.\nCriando uma nova reivindicação de autoridade \nde software\nETAPA 1: Criando reivindicação de autoridade de software"
+        },
+        {
+            "pagina": 5,
+            "conteudo": "Classificação da informação: Uso Interno\nCONTEÚDO\nDO GUIA\n15.\nConfigurando eventos de notificação no \nDiretório\nETAPA 1: Inscrever-se em um tópico\nETAPA 2: Solicitando uma subscrição\nETAPA 3: Confirmando uma subscrição\nETAPA 4: Analisando um evento de notificação\n14.\nObtendo um Software Statements Assertion\nETAPA 1: Exibindo detalhes de uma organização\n13.\nCadastrando administradores da organização\nETAPA 1: Cadastrando um administrador da organização\n16.\nObtendo um token de acesso para as APIs do \nDiretório\nETAPA 1: Localizando o identificador do cliente\nETAPA 2: Localizando a URI de token no Diretório\nETAPA 3: Adicionando certificados SSL por domínio\nETAPA 4: Obtendo um token de acesso"
+        },
+        {
+            "pagina": 6,
+            "conteudo": "Classificação da informação: Uso Interno\nCONTEÚDO\nDO GUIA 19.\nObtendo um Software Statement via API\nETAPA 1: Obtendo um SSA do Diretório via API\n18.\nListando os servidores de autorização de uma \norganização via API\nETAPA 1: Listando os servidores de autorização\n17.\nListando as organizações cadastradas no \nDiretório via API\nETAPA 1: Obtendo detalhes das organizações\n20.\nObtendo um Software Statement Assertion via \nAPI\nETAPA 1: Obtendo um SSA do Diretório via API"
+        },
+        {
+            "pagina": 7,
+            "conteudo": "Classificação da informação: Uso Interno\n7\nCONTEÚDO\nDO GUIA\n21.\nComo obter suporte ao Diretório\n22.\nAnexos\nModelo de Segurança\nAlterações da versão"
+        },
+        {
+            "pagina": 8,
+            "conteudo": "Classificação da informação: Uso Interno\nIntrodução\n01.\nO Open Banking ou Sistema Financeiro Aberto é uma iniciativa do Banco Central do \nBrasil que tem como principais objetivos trazer inovação ao sistema financeiro, \npromover a concorrência, e melhorar a oferta de produtos e serviços financeiros ao \nconsumidor final. Este guia tem o objetivo de auxiliar os profissionais envolvidos no \nnegócio e no desenvolvimento desse serviço, facilitando e esclarecendo dúvidas \nrelacionadas ao Diretório e boas práticas envolvidas.\n8\nClique aqui para uma visão completa do Open Banking no Brasil."
+        },
+        {
+            "pagina": 9,
+            "conteudo": "Classificação da informação: Uso Interno\n9\nANTES DE COMEÇAR!\nEsse guia tem como objetivo demostrar de forma \nprática a operação do Diretório Central do Open \nBanking Brasil. Além disso, ele é complementar a \noutras documentações disponibilizadas pela \ngovernança e não fazem parte do escopo do \nmesmo quaisquer detalhamentos relacionados a \nexperiência do usuário e desenvolvedor, definições \nde segurança e especificação de APIs.\nTodas as funcionalidades estão disponíveis em \nsandbox e podem ser testadas em:\nhttps://web.sandbox.directory.openbankingbrasil.org.br\nProcedimentos em produção pendentes serão \ndisponibilizados assim que possível.\nAs ações aqui apresentadas podem ser realizadas \ntanto por administradores quanto por contatos \ntécnicos primários e secundários."
+        },
+        {
+            "pagina": 10,
+            "conteudo": "Classificação da informação: Uso Interno\n10\nANTES DE COMEÇAR!\nPara ilustrar este guia e tentar deixar as situações \nde uso mais palpáveis, foram criadas instituições e \ntelas fictícias.\n• As instituições e marcas não são reais.\n• As telas desenvolvidas, os softwares e sites são \nmeramente ilustrativos, para que seja possível ver \num exemplo de como os requisitos e as \nrecomendações podem ser aplicados em situações \nde uso real.\n• Nomenclaturas e imagens ilustrativas estão \ndescritas na língua inglesa, devido sua ampla \nabrangência e por conter terminologia técnica que \nem algumas situações não dispõe de tradução \nliteral. O ajuste do idioma no Diretório fica a \ncritério do usuário, podendo ser ajustado a \nqualquer momento."
+        },
+        {
+            "pagina": 11,
+            "conteudo": "Classificação da informação: Uso Interno\n11\nTIPOS DE USUÁRIOS\nPara obter mais detalhes sobre consulte Cadastrando um usuário de domínio de autorização e Poderes dos Usuários no Diretório.\nNeste exemplo, mostramos as diversas possibilidades suportadas de atribuições de função para um usuário \ncadastrado no Diretório.\nO Diretório possibilita o cadastramento de usuários sem vínculos com nenhuma instituição. Esse tipo de \nusuário não tem nenhum acesso ou poder no Diretório. O cadastramento de um usuário relacionado a um \nparticipante, até que não seja feito o vinculo no Diretório, possui essas mesmas características.\nPúblico\nUsuários com poderes de administração no Diretório, podendo realizar todas ações.Administrativo\nUsuários com poderes específicos no Diretório.Operação\nUsuários para gestão e operação das plataformas do ecossistema, como o Service Desk, Portal, Plataforma \nde Resolução de Disputas e Plataforma Centralizada (Ressarcimento).Plataforma"
+        },
+        {
+            "pagina": 12,
+            "conteudo": "Classificação da informação: Uso Interno\n12\nRELAÇÃO ORGANIZAÇÃO X MARCAS\nNeste exemplo, mostramos as diversas \npossibilidades suportadas para se realizar cadastros \nde organizações no Diretório. Assim, uma \norganização pode ser cadastrada de forma \nindependente ou pertencente a um \nconglomerado. Já as marcas são uma forma mais \namigável, democrática e fácil para identificação das \ninstituições participantes. Uma Marca de um \nconglomerado pode estar correlacionada a mais \nde uma Instituição Participante, assim\ncomo uma Instituição Participante pode estar\ncorrelacionada a mais de uma marca.\nImportante: a Marca cadastrada no diretório será a \nmesma apresentada para escolha do usuário na \nJornada de Compartilhamento de Dados e Iniciação \nde Pagamentos. As Instituições Participantes (ou \norganizações) também serão apresentadas em tela, \napenas em caráter informativo. Para maiores \ndetalhes, consulte o Guia de Experiência do \nUsuário.\nPara obter mais detalhes sobre como cadastrar \numa marca veja a seção Cadastrando um \nAuthorisation Server.\nOrganização\nOrganização\nMarca\nMarca\nMarca\nOrganização Marca\nOrganização\nMarca\n1\n1..n\n1..n\n1..n\nn\nn\nn\n1\nn\nn\nOrganização mãe\nOrganização filha\nConglomerado\nOrganização1..n\nMarcan"
+        },
+        {
+            "pagina": 13,
+            "conteudo": "Classificação da informação: Uso Interno\n13\nPONTOS DE ATENÇÃO NO CADASTRAMENTO DE \nMARCA/AUTHORISATION SERVER\n• Uma marca é representada por um Authorisation Server e o mesmo sempre deve ser cadastrado associado a \numa organização;\n• O vinculo entre uma organização master (mãe) e uma organização que pertence ao conglomerado é realizado \nvia o preenchimento do campo Parent Organization Reference ID no cadastro da organização filha, informando o \nCNPJ da organização mãe (caso seja necessário ajuste, favor entrar em contato com \ncadastro@openbankingbr.org);\n• Quando a estrutura for de um conglomerado (uma organização master e uma ou mais organizações \nrelacionadas) é recomendado do cadastro da marca na instituição mãe, caso as filhas venham a utilizar somente \na mesma marca e arquitetura de autenticação. Importante ressaltar que caso não seja cadastrado uma marca \nexclusiva para o organização filha, a mesma irá herdar a(s) marca(s) da organização mãe;\n• Caso uma marca pertença a uma organização filha o cadastro deve ser exclusivamente realizado na filha;\n• Caso a mesma marca pertença a mais de uma organização, deve ser realizado um cadastro de Authorisation\nServers para cada uma das organizações. É recomendado que as configurações dos Authorisation Servers sejam \niguais, principalmente o campo Customer Friendly Server Name (marca);\n• Quando for necessário cadastrar uma marca exclusiva para uma organização filha ela deixa de herdar a(s) \nmarca(s) da organização mãe. Caso uma filha tenha que estar relacionada a uma marca exclusiva e também a da \nmãe, é necessário cadastrar a marca da mãe na filha."
+        },
+        {
+            "pagina": 14,
+            "conteudo": "Classificação da informação: Uso Interno\n14\nCADASTRAMENTO FASE 1 x FASE 2\n• Se o cadastramento do Authorisation Server na Fase 1 já foi realizado com uma marca válida para a Fase 2:\nÉ necessário cadastrar os recursos de Fase 2 no mesmo Authorisation Server, mantendo o Customer\nFriendly Server Name (marca) da Fase 1;\n• Se o cadastramento do Authorisation Server na Fase 1 não foi realizado com uma marca válida para a Fase 2:\nÉ necessário atualizar o Customer Friendly Server Name (marca) para a Fase 2 e cadastrar os recursos de \nFase 2 no mesmo;\n• Os recursos da Fase 1 devem estar declarados em pelo menos um Authorisation Server do participante válido \npara a Fase 2;\n• Após esse processo, caso a instituição venha a ter Authorisation Servers / marcas oferecendo recursos exclusivos \nde fase 2, recomenda-se a criação de novos registros sem os recursos de Fase 1."
+        },
+        {
+            "pagina": 15,
+            "conteudo": "Classificação da informação: Uso Interno\n15\nExemplo de possíveis cenários\nOrganização Marca 1\nNeste exemplo, temos uma “organização” que não possui “organizações filhas” e possui apenas um AS/marca, a “marca 1”.\nOrganização participante #1\nCNPJ: 111.111.111/0001-11\nParent:\nWizcredi\nOrganização e Marcas"
+        },
+        {
+            "pagina": 16,
+            "conteudo": "Classificação da informação: Uso Interno\n16\nExemplo de possíveis cenários\nNeste exemplo, temos uma “organização” que não possui  “organizações filhas”, mas que possui N AS/marca.\nNeste exemplo, N = 2 marcas (“marca 1” e “marca 2”).\nMarca 1\nMarca 2\nOrganização\nOrganização participante #1\nCNPJ: 111.111.111/0001-11\nParent:\nWizcredi\nGoop\nOrganização e Marcas"
+        },
+        {
+            "pagina": 17,
+            "conteudo": "Classificação da informação: Uso Interno\n17\nExemplo de possíveis cenários\nOrganização mãe Marca 1\nO relacionamento entre as “organizações filhas” com a “organização mãe” é realizado via PARENT ORGANISATION REFERENCE ID, preenchendo o Parent das \n“organizações filhas” com o CNPJ da “organização mãe”.\nQuando uma “organização mãe” tem uma ou mais de uma “organização filha”, temos um conglomerado\nNeste exemplo, temos uma “organização mãe” que possui uma marca (“marca 1”) que é compartilhada com a “organização filha 1”. \nJá a “organização filha 2” possui sua próprio marca “marca 2”\nOrganização filha 1\nOrganização filha 2 Marca 2\nWizcredi\nGoop\nOrganização participante #1\nCNPJ: 111.111.111/0001-11\nParent:\nOrganização participante #2\nCNPJ: 222.222.222/0001-22\nParent: 111.111.111/0001-11\nOrganização participante #3\nCNPJ: 333.333.333/0001-33\nParent: 111.111.111/0001-11\nConglomerado"
+        },
+        {
+            "pagina": 18,
+            "conteudo": "Classificação da informação: Uso Interno\n18\nExemplo de possíveis cenários\nOrganização mãe Marca1\nNeste exemplo, temos uma “organização mãe” que possui uma marca “marca 1”. A mesma “marca 1” está presente na “organização filha 1”, mas não na \n“organização filha 2”.\nA “organização filha 1” deve apresentar a “marca 1” e a “marca 2”, como ela possui uma marca não receberia a da “organização mãe” por isso ambas as marcas \ndevem ser declaradas.\nAtenção! Uma “organização filha” que tenha qualquer marca cadastrada, não assume a marca da mãe! A “organização filha” só assume a marca da mãe se não \ntiver nenhuma marca cadastrada nela! \nLembrando, o relacionamento entre as organizações é realizado via preenchimento do campo PARENT ORGANISATION REFERENCE ID na instituição filha \nreferenciando a mãe.\nOrganização filha 1\nOrganização filha 2 Marca 2\nMarca 1\nMarca 2\nOrganização participante #1\nCNPJ: 111.111.111/0001-11\nParent: \nOrganização participante #2\nCNPJ: 222.222.222/0001-22\nParent: 111.111.111/0001-11\nOrganização participante #3\nCNPJ: 333.333.333/0001-33\nParent: 111.111.111/0001-11\nWizcredi\nGoop\nGoop\nWizcredi\nOrganização e Marcas"
+        },
+        {
+            "pagina": 19,
+            "conteudo": "Classificação da informação: Uso Interno\n19\nExemplo de possíveis cenários\nOrganização mãe Marca1\nNeste exemplo, temos uma “organização mãe” que possui uma “marca 1” que é compartilhada com a “organização filha 3”. Logo, a “organização filha 3” \nassume a “marca 1”.\nJá a “organização filha 1” e  “organização filha 2” possuem sua próprio marca, que é a “marca 2” e devem ser relacionada a cada uma delas.\nSe a “marca 2” fosse adicionada na “organização mãe” a “organização filha 3” iria receber também.\nLembrado, o relacionamento entre as organizações é realizado via preenchimento do campo PARENT ORGANISATION REFERENCE ID na instituição filha \nreferenciando a mãe.\nOrganização filha 1\nOrganização filha 2 Marca 2\nMarca 2\nOrganização filha 3\nWizcredi\nGoop\nGoop\nOrganização participante #1\nCNPJ: 111.111.111/0001-11\nParent: \nOrganização participante #2\nCNPJ: 222.222.222/0001-22\nParent: 111.111.111/0001-11\nOrganização participante #3\nCNPJ: 333.333.333/0001-33\nParent: 111.111.111/0001-11\nOrganização participante #3\nCNPJ: 444.444.444/0001-44\nParent: 111.111.111/0001-11\nOrganização e Marcas"
+        },
+        {
+            "pagina": 20,
+            "conteudo": "Classificação da informação: Uso Interno\n20\nExemplo de possíveis cenários\nOrganização mãe Marca1\nVejamos um cenário mais complexo:\nNeste exemplo, temos uma “organização mãe” que possui uma \nmarca “marca 1” que é compartilhada com a “organização filha 4”. \nJá a “organização filha 1” e  “organização filha 2” possuem sua \nprópria marca igual “marca 2” mas que está relacionada a apenas \na elas.\nA “organização filha 3” possui duas marcas exclusivas dela “marca \n3” e “marca 4”.\nLembrando, o relacionamento entre as organizações é realizado \nvia preenchimento do campo PARENT ORGANISATION REFERENCE \nID na instituição filha referenciando a mãe.\nOrganização filha 1\nOrganização filha 2 Marca 2\nMarca 2\nOrganização filha 3\nOrganização filha 4\nMarca 3\nMarca 4\nOrganização participante #1\nCNPJ: 111.111.111/0001-11\nParent: \nOrganização participante #2\nCNPJ: 222.222.222/0001-22\nParent: 111.111.111/0001-11\nOrganização participante #3\nCNPJ: 333.333.333/0001-33\nParent: 111.111.111/0001-11\nOrganização participante #4\nCNPJ: 444.444.444/0001-44\nParent: 111.111.111/0001-11\nOrganização participante #5\nCNPJ: 555.555.555/0001-55\nParent: 111.111.111/0001-11\nWizcredi\nGoop\nGoop\nBratech Crédito\nWizcard\nOrganização e Marcas"
+        },
+        {
+            "pagina": 21,
+            "conteudo": "Classificação da informação: Uso Interno\n02.\n21\nRegistrando um usuário no Diretório\nPara acessar o Diretório de participantes você precisa estar \nregistrado com um usuário válido. Esta seção descreve as etapas \nnecessárias para realizar o registro de um novo usuário."
+        },
+        {
+            "pagina": 22,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Registrando um usuário no Diretório\nRequisitos\n1. No navegador, digite a URL de acordo com o \nambiente a ser acessado:\nSandbox \nhttps://web.sandbox.directory.openbankingbrasil.\norg.br/\nProdução\nhttps://web.directory.openbankingbrasil.org.br/\n2. Clique no link Register\n3. Na tela Register for an account, preencha os \ncampos do formulário. O slide a seguir apresenta \ncada um dos campos em mais detalhes.\n4. Clique no botão Register.\n22\nNOTA: E-mails sociais não são permitidos, e você deve \nutilizar um endereço de e-mail válido da instituição. O \ncadastro pode ser realizado por qualquer colaborador da \norganização, identificado aqui como um Iniciador de \nCadastro, podendo ser tanto um contato administrativo \nquanto técnico da instituição. \n"
+        },
+        {
+            "pagina": 23,
+            "conteudo": "Classificação da informação: Uso Interno\n23\nNome do campo Descrição Exemplo\nFirst Name Deve ser preenchido com o primeiro nome do usuário João\nFamily Name Deve ser preenchido com o sobrenome do usuário Silva\nE-mail Address Deve ser informado um endereço de e-mail corporativo joao.silva@wizcredi.com.br\nPhone Number Informar o número de telefone de contato do usuário. +55 51 900000000\nPassword\nDefinir uma senha que deve conter entre 8 e 24 caracteres \ncom letras maiúsculas, minúsculas, números e ao menos um \ncarácter especial\n<senha_secreta>\nConfirm \nPassword Repetir a mesma senha informada no campo anterior. <senha_secreta>\nNational ID (CPF) Informar o número de registro do Cadastro de Pessoa Física \n(CPF) 999999999-00\nDo you possess\nna e-signature\ncertificate?\nO seletor deve estar assinalado caso o usuário possua um e-\nCPF.\nDetalhamento dos campos"
+        },
+        {
+            "pagina": 24,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 2: Verificando os dados informados\nRequisitos\n1. Nesta etapa, o Diretório irá enviar uma senha de \nuso único (OTP), que será encaminhada ao \nendereço de e-mail e número de telefone \ninformado na etapa anterior.\n2. No e-mail recebido, selecione, copie e cole o \ncódigo OTP no campo EMAIL VERIFICATION CODE.\n3. Na mensagem SMS recebida no telefone celular, \ncopie o código OTP e informe no campo PHONE \nNUMBER VERIFICATION CODE.\n4. Clique no botão Verify.\n24\nNOTA: Caso você não tenha recebido o e-mail com o \ncódigo de confirmação, verifique sua caixa de SPAM e as \npoliticas de bloqueio de mensagens. O envio das \nmensagens poderá sofrer algum atraso, contudo, se o \nproblema persistir, clique no botão Resend OTP para \nreenvio das mensagens. \n"
+        },
+        {
+            "pagina": 25,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 3: Confirmando o processo de registro\nRequisitos\n1. Nesta etapa, faça o download de um aplicativo de \nautenticação de sua preferência. É possível utilizar \no Google Authenticator, Microsoft Authenticator, \nLastPass Authenticator, 1Password entre outros.\n2. Digitalize o QR Code que aparece na página e no \naplicativo de autenticação, copie e cole a senha \nde uso único (OTP).\n3. Clique no botão Sign-In\n25\n"
+        },
+        {
+            "pagina": 26,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 4: Confirmação da assinatura eletrônica\nRequisitos\n1. Nesta etapa, será enviado um e-mail contendo \num link para análise e assinatura do Termo de \nAceite.\n2. Selecione e copie o código de acesso apresentado \nna janela Upload e-signature confirmation.\n3. Na mensagem recebida na caixa de entrada em \nnome da DocuSign, clique no link ANALISAR \nDOCUMENTO. Ao clicar, você será redirecionado \npara o website da DocuSign.\n4. No navegador, cole o valor copiado no passo 2 e \ncole no campo Código de acesso.\n5. Clique no botão Validar.\n26\n"
+        },
+        {
+            "pagina": 27,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 5: Análise e confirmação do Termo de Aceite\nRequisitos\n1. Nesta etapa, no website da DocuSign, clique no \nbotão Continuar.\n2. Role o documento para baixo, e na página \nseguinte clique no ícone Rubricar, e ao final das \npáginas no ícone Assinar.\n3. Clique no botão Concluir.\n4. Na janela Salvar uma cópia do seu documento, \nvocê pode ser inscrever para obter uma conta \nDocuSign gratuita e assinar todos os seus \ndocumentos eletronicamente. Nesta janela, \ntambém é possível clicar no ícone Fazer Download \ne baixar uma cópia do documento assinado. \n5. Clique no botão Submeter. Ao clicar no botão \nSubmeter, você aceita os Termos e Condições e \nreconhece que seus dados serão utilizados \nconforme descrito na Política de Privacidade da \nDocuSign.\n27\n"
+        },
+        {
+            "pagina": 28,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 5: Análise e confirmação do Termo de Aceite\nRequisitos\n6. Na caixa de entrada, você receberá um e-mail \nenviado pela DocuSign contendo um cópia do \ndocumento Termo de Aceite assinado \neletronicamente.\n7. Retorne ao Diretório, e na janela Upload e-\nsignature confirmation clique no botão Check \nstatus. Se todas as etapas anteriores forem \nvalidadas com sucesso, você será \nautomaticamente redirecionado à página inicial \ndo Diretório.\n28\n"
+        },
+        {
+            "pagina": 29,
+            "conteudo": "Classificação da informação: Uso Interno\n03.\n29\nAcessando uma Organisation\nEsta seção descreve as etapas necessárias para exibir detalhes \nde uma organização."
+        },
+        {
+            "pagina": 30,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Exibindo detalhes de uma organização\nRequisitos\n30\n1. No Diretório, localize e selecione a sua \norganização.\n2. Revise as informações previamente cadastradas.\nNOTA: Os cadastrados foram realizados de forma \nantecipada a partir de informações fornecidas junto ao \nBanco Central do Brasil. É fundamental que as \norganizações verifiquem as informações cadastradas. Em \nCaso exista alguma divergência entre em contato pelo e-\nmail cadastro@openbankingbr.org"
+        },
+        {
+            "pagina": 31,
+            "conteudo": "Classificação da informação: Uso Interno\n31\nNome do campo Descrição Exemplo\nStatus Define o estado atual do cadastro, se ativo ou não. Active\nOrganisation \nName Deve ser informado o nome da organização. BCO Wizcredi S.A.\nRegistration \nNumber-CNPJ\nDeve ser informado o número de Cadastro Nacional da \nPessoa Jurídica (CNPJ) da organização. 22.222.222/0002-22\nDate of Creation Data de criação do registro de cadastro da organização. 2021-01-07T11:13:08.531Z\nCompany \nRegistrar Cadastro Nacional da Pessoa Jurídica\nOrganisation ID Identificador da organização. Esta informação será gerada \nautomaticamente. cdc674fd-b019-5110-af5d-0268ed8227371\nParent\nOrganisation \nReference ID\nDeve ser informado o número de Cadastro Nacional da \nPessoa Jurídica (CNPJ) da organização mãe para casos em \nque seja necessário a constituição de um conglomerado. O \nslide Cadastramento de conglomerados ilustra este cenário \nem mais detalhes.  \n11.111.111/0001-11\nLegal Name Deve ser informado o nome legal de cadastro da instituição. Banco Wizcredi S.A.\nAddress Line 1 Deve ser informado o logradouro da organização. Av. Dr. Chucri Zaidan 296\nAddress Line 2 Deve ser informado o logradouro da organização. Cidades Monções\nCity Deve ser informado a cidade da organização. São Paulo, SP\nCountry Deve ser informado o país da organização. BR\nDetalhamento dos campos"
+        },
+        {
+            "pagina": 32,
+            "conteudo": "Classificação da informação: Uso Interno\n32\nOrganização Y\nOrganização Z\nOrganização mãe\nOrganização filha\nConglomerado\n11.111.111/0001-11\nRegistration Number CNPJ\nParent Organization Reference IDOrganização X\n22.222.222/0002-22\nRegistration Number CNPJ\n11.111.111/0001-11\nParent Organisation Reference ID\n33.333.333/0003-33\nRegistration Number CNPJ\n11.111.111/0001-11\nParent Organisation Reference ID\nNo diretório de participantes há \no conceito de conglomerado. \nAssim, uma organização mãe \npoderá ser referenciada em um \ncadastro de uma organização \nfilha, atribuindo-se o CNPJ da \norganização mãe no campo \nPARENT ORGANISATION \nREFERENCE ID da organização \nfilha.\nCADASTRAMENTO DE \nCONGLOMERADO\nImportante! Se a sua organização faz parte de um conglomerado é fundamental referenciar as organizações \nfilhas com a organização mãe."
+        },
+        {
+            "pagina": 33,
+            "conteudo": "Classificação da informação: Uso Interno\n33\n04.\nCadastrando contatos de notificação\nApós o onboarding da instituição e do representante da mesma \né necessário realizar o cadastro da equipe de contatos de \nnotificação no Diretório Central. Esses contatos são para \npossíveis comunicações entre os participantes e a estrutura \ncentral."
+        },
+        {
+            "pagina": 34,
+            "conteudo": "Classificação da informação: Uso Interno\n34\nETAPA 1: Cadastrando um novo contato\nRequisitos\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Contacts e clique no botão New \nContact.\n3. Na janela New Contact preencha os campos do \nformulário. O slide a seguir apresenta cada um \ndos campos em mais detalhes.\n4. Clique no botão Save.\nNOTA: Os usuários de notificação não possuem ações \ndentro do Diretório e nas demais plataformas do \nperímetro central."
+        },
+        {
+            "pagina": 35,
+            "conteudo": "Classificação da informação: Uso Interno\n35\nNome do campo Descrição Exemplo\nContact Type* Tipo do contato (Business/Negócio, Technical/Técnico, \nBilling/Cobrança, Incident/Incidente e Security/Segurança) Incident\nDepartment Deve ser informado o departamento do contato Operações de TI\nFirst Name Deve ser informado o primeiro nome do contato João\nLast Name Deve ser informado o sobrenome do contato Silva\nEmail* O endereço de e-mail do contato joao.silva@wizcredi.com.br\nPhone Number* Deve ser informado o número de telefone do contato +55 51 900000000\nAdditional \nInformation\nDeve ser informado o e-mail para o grupo de notificação do \ncontato. openbanking@wizcredi.com.br\nPGP Public Key Chave pública PGP\nAddress Line 1 Deve ser informado o endereço (Rua, Avenida ou Alameda) Av. Dr. Chucri Zaidan 296\nAddress Line 2 Deve ser informado o bairro Cidades Monções\nCity Deve ser informado a cidade de domicílio São Paulo\nPost Code Deve ser informado o código portal 99.999-99\nCountry Deve ser informado o país de domicílio Brasil\nDetalhamento dos campos\n*Campo obrigatório"
+        },
+        {
+            "pagina": 36,
+            "conteudo": "Classificação da informação: Uso Interno\n36\nNome do campo Descrição\nBusiness/Negócio Contato responsável pela gestão de negócio do Open Banking na instituição.\nTechnical/Técnico Contato para tratativa de problemas técnicos do tipo: performance, disponibilidade e quanto a API’s\nde forma geral.\nBilling/Cobrança Contato responsável pela cobrança dos custos da estrutura central do Open Banking Brasil.\nIncident/Incidente Contato responsável pelo atendimento de incidentes relacionados ao Open Banking na instituição.\nSecurity/Segurança Contato para tratativas relacionadas a problemas de caráter de segurança como DCR, certificados \nentre outros.\nDetalhamento dos Tipos de Contato\nNOTA: É de inteira responsabilidade da instituição manter os contatos sempre atualizados para que a comunicação entre \nas instituições participantes não seja prejudicada."
+        },
+        {
+            "pagina": 37,
+            "conteudo": "Classificação da informação: Uso Interno\n37\n05.\nCadastrando reivindicações de domínio \nde autoridade\nEsta seção explica as etapas para cadastrar reivindicações de \ndomínio de autoridade."
+        },
+        {
+            "pagina": 38,
+            "conteudo": "Classificação da informação: Uso Interno\n38\nETAPA 1: Cadastrando uma nova reivindicação de domínio\nRequisitos\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Authority Domain Claims e \nclique no botão New Domain Claim.\n3. Na janela New Authority Domain Claim preencha \nos campos do formulário. O slide a seguir \napresenta cada um dos campos em mais detalhes.\n4. Clique no botão Save."
+        },
+        {
+            "pagina": 39,
+            "conteudo": "Classificação da informação: Uso Interno\n39\nNome do campo Descrição Exemplo\nAuthority \nName* Informe o nome da autoridade. Banco Central do Brasil\nAuthorisation \nDomain Name* Informe o nome de domínio de autorização. Open Banking Brasil\nAuthority ID Exibe o identificador de autoridade única. Esta informação \nserá gerada automaticamente. 5360d5bf-5024-47cd-bd18-daab08df38ba\nRegistration ID Informe o ID de registro de reivindicação de domínio \nexclusivo. Não é necessário preencher esta informação. <CNPJ-OBB>\nDetalhamento dos campos\n*Campo obrigatório"
+        },
+        {
+            "pagina": 40,
+            "conteudo": "Classificação da informação: Uso Interno\n40\n06.\nCadastrando reivindicações de \nautoridade\nEsta seção explica as etapas para cadastrar reivindicações de \nautoridade e como adicionar usuários com suas respectivas \nfunções que serão desempenhadas pela organização dentro do \nOpen Banking."
+        },
+        {
+            "pagina": 41,
+            "conteudo": "Classificação da informação: Uso Interno\n41\nNome da modalidade no diretório Descrição\nDADOS\nInstituição transmissora e/ou receptora de dados é a instituição que sendo: \n• Transmissora de dados: instituição participante que compartilha os dados com a instituição \nreceptora;\n• Receptora de dados: instituição participante que apresenta solicitação de compartilhamento à \ninstituição transmissora para recepção dos dados.\nCONTA Instituição detentora de conta é a instituição participante que mantém conta de\ndepósitos à vista ou de poupança ou conta de pagamento pré-paga de cliente.\nPAGTO Instituição prestadora de serviço de iniciação de transação de pagamento é uma instituição \nparticipante que presta serviço de iniciação de transação de pagamento.\nCCORR\nInstituição que tenha firmado, na condição de contratante, contrato de correspondente no País, \ncujo objeto contemple a atividade de atendimento prevista no art. 8º., inciso V, da Resolução nº \n3.954, de 24 de fevereiro de 2011, por meio eletrônico.\nDetalhamento das modalidades\nNOTA: As modalidades assumidas pelos participantes no âmbito do Open Banking são auto declaratórias e podem ser \nexercidas simultaneamente. Contudo, tais modalidades deverão estar em conformidade com o modelo de negócio do \nparticipante e estarão sujeitas à verificação pela fiscalização do Banco Central do Brasil, especialmente com relação ao \ncumprimento do princípio da reciprocidade no compartilhamento de dados no Open Banking Brasil."
+        },
+        {
+            "pagina": 42,
+            "conteudo": "Classificação da informação: Uso Interno\n42\nETAPA 1: Cadastrando uma nova reivindicação de função\nRequisitos\n1. Necessário realizar a seção Cadastrando \nreivindicações de domínio de autoridade.\n2. No Diretório, localize e selecione a sua \norganização.\n3. Selecione o menu Authority Domain Role Claims e \nclique no botão New Role Claim.\n4. Na janela New Authority Domain Role Claim \npreencha os campos do formulário. O slide a \nseguir apresenta cada um dos campos em mais \ndetalhes.\n5. Clique no botão Save."
+        },
+        {
+            "pagina": 43,
+            "conteudo": "Classificação da informação: Uso Interno\n43\nNome do campo Descrição Exemplo\nAuthority \nName* Selecione o nome da autoridade. Banco Central do Brasil\nAuthorisation \nDomain Name* Selecione o nome de domínio de autorização. Open Banking Brasil\nRole*\nSelecione a modalidade (função) sendo um dos valores: \nCONTA, DADOS, CCORR ou PAGTO, para obter mais \ndetalhes verifique em Detalhamento das modalidades.\nDADOS\nUnique \nTechnical \nIdentifier\nSelecione o identificador técnico único.\nRegistration ID*\nDeve ser informado o número de registro único [ISPB-OBB-\nFUNÇÃO]. Substitua o [ISPB] pelos primeiros 8 dígitos do \nseu CNPJ e o [FUNÇÃO] pela sigla da função que você está \ninserindo.\n12345678-OBB-DADOS\nDetalhamento dos campos\n*Campo obrigatório"
+        },
+        {
+            "pagina": 44,
+            "conteudo": "Classificação da informação: Uso Interno\n44\nETAPA 2: Cadastrando um usuário de domínio de autorização\nRequisitos\n1. Necessário realizar a Cadastrando uma nova \nreivindicação de domínio.\n2. No Diretório, localize e selecione a sua \norganização.\n3. Selecione o menu Authority Domain Role Claims e \nclique no link Open Banking Brasil na qual se \ndeseja cadastrar os usuários.\n4. Na janela New Authority Domain Role Claim role  \na página para baixo e selecione o menu \nOrganisation Domain Users clique no botão New \nAuthorisation Domain User.\n5. Na janela New Authorisation Domain User \npreencha os campos do formulário. O slide a \nseguir apresenta cada um dos campos em mais \ndetalhes.\n6. Clique no botão Save.\n"
+        },
+        {
+            "pagina": 45,
+            "conteudo": "Classificação da informação: Uso Interno\n45\nNome do campo Descrição Exemplo\nDomain Name É apresentado o domínio de autorização para o qual esta a \nreivindicação de domínio está mapeada. Open Banking Brasil\nAuthorisation \nDomain Role\nÉ apresentada a função mapeada para o domínio de \nautorização. DADOS\nSystem*\nSelecione o sistema de contato sendo um dos valores a \nseguir: Directory, Service Desk, Dispute Resolution, Portal ou\nCentralized Platform. Para obter mais detalhes verifique em \nSistemas e Funções de um usuário/contato. \nDirectory\nContact Role*\nSelecione o papel assumido pelo contato. Para obter mais \ndetalhes verifique em Sistemas e Funções de um \nusuário/contato.\nPBC\nEmail* Deve ser informado o endereço de e-mail corporativo do \ncontato. joao.silva@wizcredi.com.br\nDetalhamento dos campos\n*Campo obrigatório"
+        },
+        {
+            "pagina": 46,
+            "conteudo": "Classificação da informação: Uso Interno\n46\nNotas\n• Para obter mais detalhes dos poderes do usuário verifique a tabela Modelo de Segurança.\n• Podem existir quantos contatos primários e secundários a instituição achar necessário.\n• Contatos primários podem acessar o Diretório e adicionar contatos secundários. Já os Contatos secundários não conseguem acess ar o \nDiretório e consequentemente, não conseguem adicionar novos usuários secundários.\n• A implementação dos poderes de acesso de contatos primários e secundários dependem e podem variar de plataforma.\n• Atualmente somente os perfis Directory e Dispute Resolution são necessários.\nCentralized Platform\nPCPC\nSCPC\nPrimary Centralized Platform Contact\nSecondary Centralized Platform Contact\nContato de Plataforma Centralizada Primário\nContato de Plataforma Centralizada Secundário\nPortal\nPPC\nSPC\nPrimary Portal Contact\nSecondary Portal Contact\nContato de Portal Primário\nContato de Portal Secundário\nDispute Resolution\nPDC\nSDC\nPrimary Dispute Contact\nSecondary Dispute Contact\nContato de Disputa Primário\nContato de Disputa Secundário\nService Desk\nPSDC\nSSDC\nPrimary Service Desk Contact\nSecondary Service Desk Contact\nContato de Service Desk Primário\nContato de Service Desk Secundário\nDirectory\nPTC\nPBC\nSTC\nSBC\nPrimary Technical Contact\nPrimary Business Contact\nContato Técnico Primário\nContato de Negócio Primário\nSecondary Technical Contact\nSecondary Business Contact\nContato Técnico Primário\nContato de Negócio Secundário\nPlataforma Operação\nSystem Contact Role\nSISTEMAS E FUNÇÕES DE UM\nUSUÁRIO/CONTATO"
+        },
+        {
+            "pagina": 47,
+            "conteudo": "Classificação da informação: Uso Interno\n07.\n47\nCadastrando um Authorisation Server\nDurante a jornada de consentimento do usuário, os receptores \nexibirão a marca e o servidor de autorização que está sendo \nsolicitado o acesso aos dados do usuário. Esta seção descreve as \netapas necessárias para cadastrar as marcas e os servidores de \nautorização da organização."
+        },
+        {
+            "pagina": 48,
+            "conteudo": "Classificação da informação: Uso Interno\n48\nETAPA 1: Criando um novo servidor de autorização\nRequisitos\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Authorisation Servers e clique \nno botão New Authorisation Server.\n3. Na janela New Authorisation Server preencha os \ncampos do formulário. O slide a seguir apresenta \ncada um dos campos em mais detalhes.\nAtenção: Tendo em vista a ausência de análise de \nimpacto para o ecossistema da retirada de um \nAuthorisation Server, recomenda-se que os AS \nresponsáveis por consentimentos não sejam \nretirados do diretório até a expiração/revogação dos \nconsentimentos pelos quais é responsável.\n"
+        },
+        {
+            "pagina": 49,
+            "conteudo": "Classificação da informação: Uso Interno\n49\nNome do campo Descrição Exemplo\nActive*\nDynamic Client \nRegistration*\nCustomer \nFriendly Server \nName*\nDeve ser definido o valor da marca que será exibido no \nreceptor. Apresentar seu nome por inteiro, sem \nabreviações, de forma a ser reconhecido pelo cliente e \naderente a interfaces menores.\nLimite de caracteres: 256 (padrão do campo)\nPara mais informações sobre marca, consulte o Guia de Experiência de Usuário.\nWizcredi\nOpenID\nDiscovery \nDocument URI*\nO URI para a localização do documento de descoberta \nOpenID.\nhttps://www.wizcredi.com.br/.well-known/openid-\nconfiguration\nPayload Signing\nCertificate URI* O URI para a localização do certificado de assinatura. https://www.wizcredi.com.br/jwks\nDetalhamento dos campos\n*Campo obrigatório"
+        },
+        {
+            "pagina": 50,
+            "conteudo": "Classificação da informação: Uso Interno\n50\nNome do campo Descrição Exemplo\nCustomer \nFriendly Logo \nURI*\nDeve ser definida a URI para o logotipo da marca. Para \nobter mais detalhes sobre formato, dimensão e peso \nmáximo do arquivo consulte o Guia de Experiencia Fase 2.\nhttps://www.wizcredi.com.br/logo.svg\nDeveloper Portal \nURI O URI do portal do desenvolvedor. https://developers.wizcredi.com.br\nTerms Of Service \nURI\nA URI de localização do documento de termos e serviços da \norganização. https://www.wizcredi.com.br/tos.html\nNotification \nWebhook \nEndpoint\nEndpoint do Webhook de notificação. A seção Configurando \neventos de notificação no Diretório descreve esta \nconfiguração em mais detalhes. \nhttps://webhook.site/9d84a827-c200-4170-b0f8-\nf830170037bb\nDescription*\n1. Limite de caracteres: 256 (padrão do campo)\n2. Não deve ser permitido que a descrição traga links\n3. O que deve conter:\n• Esse é um texto de marcação onde deverá ser descrita a marca, trazendo \ninformações adicionais para que o cidadão não tenha dúvidas sobre a escolha \nfeita.\n4. Orientações sobre o que pode conter:\n• Texto institucional de apresentação\n• Desde quanto atua\n• Diferenciais de atuação\n• Canais de atendimento\nEsse é um texto de marcação onde deverá ser descrita a \nmarca, trazendo informações adicionais para que o \ncidadão não tenha dúvidas sobre a escolha feita.\nDetalhamento dos campos\n*Campo obrigatório\nNotas\n• O campo Customer Friendly Logo URI é o que a receptora deverá utilizar para apresentar a logomarca da transmissora. "
+        },
+        {
+            "pagina": 51,
+            "conteudo": "Classificação da informação: Uso Interno\nDetalhamento do logotipo\nO logotipo das instituições participantes deverá ser  \naplicado no Portal do Cidadão e também poderá  ser \naplicado no redirecionamento entre instituições  \ndurante a Jornada de Compartilhamento de Dados.\n51\nPor isso foram deliberadas práticas para uso e \ndisponibilização:\n• Utilizar preferencialmente logotipo prioritário, \nque os clientes  reconheçam nos canais;\n• Versão reduzida do logo, símbolo ou favicon de \nsite;\n• Enviar arquivo SVG contendo a área de proteção \ndo logo da  instituição para garantir a leitura e o \nespaçamento correto;\n• Formato de envio:\nSVG\nDimensão mínima: 512px x 512px \nSem sombra\n• Peso máximo do arquivo: 1 mega;"
+        },
+        {
+            "pagina": 52,
+            "conteudo": "Classificação da informação: Uso Interno\n08.\n52\nCadastrando recursos de uma API\nEsta seção explica as etapas para cadastrar os endpoints de \nrecursos de uma API."
+        },
+        {
+            "pagina": 53,
+            "conteudo": "Classificação da informação: Uso Interno\n53\nCADASTRAMENTO DE RECURSOS FASE 1\nPara cada uma das famílias de APIs devem ser adicionadas todos os endpoints disponíveis. Supondo que a \ninstituição tenha disponibilizado dados em todos os endpoints da fase 1, a publicação deveria ser:\n"
+        },
+        {
+            "pagina": 54,
+            "conteudo": "Classificação da informação: Uso Interno\n54\nCADASTRAMENTO DE RECURSOS FASE 2\nNa Fase 2 o padrão de cadastramento continua como na Fase 1, segue alguns pontos de atenção:\n• A API de consentimento é necessário apenas o cadastramento de uma entrada para o GET e o DELETE;\n• A API de customers foi dividida em duas famílias para facilitar o consumos pelos receptores. Customers-business \nonde é cadastrado os Endpoints PJ e customers-personal onde será cadastrado os endpoints PF. Cabendo aqui o \ncadastramento conforme a disponibilização do produto pela instituição;\n• O cadastramento de recursos deve respeitar a tabela de etapas da implementação assistida, conforme IN BCB n°\n136 de 29/7/2021.\n*Exemplo de preenchimento, levando em consideração que a instituição disponibilize tanto PF e PJ e o inicio da implementação assistida.\n"
+        },
+        {
+            "pagina": 55,
+            "conteudo": "Classificação da informação: Uso Interno\n55\nCADASTRAMENTO DE RECURSOS FASE 3\nNa Fase 3 o padrão de segue alguns pontos de atenção:\n• A API de payments foi dividida para facilitar o consumo pelos iniciadores.\n• Na família de payments-consents devem ser declarados os endpoints de consentimento.\n• Na família de payments-pix devem ser declarado sos endpoints da forma de pagamento PIX.\n• Demais formas de pagamentos devem ser cadastradas conforme as especificações avancem.\n*Exemplo de preenchimento"
+        },
+        {
+            "pagina": 56,
+            "conteudo": "Classificação da informação: Uso Interno\n56\nAPI Diretório \n(Family Type) Recursos (resources)\ndiscovery discovery https://api.banco.com.br/open-banking/discovery/v1/status\nhttps://api.banco.com.br/open-banking/discovery/v1/outages\nchannels channels\nhttps://api.banco.com.br/open-banking/channels/v1/branches\nhttps://api.banco.com.br/open-banking/channels/v1/electronic-channels\nhttps://api.banco.com.br/open-banking/channels/v1/phone-channels\nhttps://api.banco.com.br/open-banking/channels/v1/banking-agents\nhttps://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines\nproducts-services products-\nservices\nhttps://api.banco.com.br/open-banking/products-services/v1/personal-accounts\nhttps://api.banco.com.br/open-banking/products-services/v1/business-accounts\nhttps://api.banco.com.br/open-banking/products-services/v1/personal-loans\nhttps://api.banco.com.br/open-banking/products-services/v1/business-loans\nhttps://api.banco.com.br/open-banking/products-services/v1/personal-financings\nhttps://api.banco.com.br/open-banking/products-services/v1/business-financings\nhttps://api.banco.com.br/open-banking/products-services/v1/personal-invoice-financings\nhttps://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings\nhttps://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards\nhttps://api.banco.com.br/open-banking/products-services/v1/business-credit-cards\nhttps://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft\nhttps://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft\nadmin admin https://api.banco.com.br/open-banking/admin/v1/metrics\nTabela exemplo recursos fase 1"
+        },
+        {
+            "pagina": 57,
+            "conteudo": "Classificação da informação: Uso Interno\n57\nAPI Diretório (Family \nType) Recursos (resources)\nconsents consents https://api.banco.com.br/open-banking/consents/v1/consents\nhttps://api.banco.com.br/open-banking/consents/v1/consents/{consentId}\nresources resources https://api.banco.com.br/open-banking/resources/v1/resources\ncustomers customers-bussines\ncustomers-personal\ncustomers-personal\nhttps://api.banco.com.br/open-banking/customers/v1/personal/identifications\nhttps://api.banco.com.br/open-banking/customers/v1/personal/qualifications\nhttps://api.banco.com.br/open-banking/customers/v1/personal/financial-relations\ncustomers-bussines\nhttps://api.banco.com.br/open-banking/customers/v1/business/identifications\nhttps://api.banco.com.br/open-banking/customers/v1/business/qualifications\nhttps://api.banco.com.br/open-banking/customers/v1/business/financial-relations\ncredit-cards-\naccounts\ncredit-cards-\naccounts\nhttps://api.banco.com.br/open-banking/credit-cards-accounts/v1/accounts\nhttps://api.banco.com.br/open-banking/credit-cards-accounts/v1/accounts/{creditCardAccountId}\nhttps://api.banco.com.br/open-banking/credit-cards-accounts/v1/accounts/{creditCardAccountId}/limits\nhttps://api.banco.com.br/open-banking/credit-cards-accounts/v1/accounts/{creditCardAccountId}/transactions\nhttps://api.banco.com.br/open-banking/credit-cards-accounts/v1/accounts/{creditCardAccountId}/bills\nhttps://api.banco.com.br/open-banking/credit-cards-accounts/v1/accounts/{creditCardAccountId}/bills/{billId}/transactions\naccounts accounts\nhttps://api.banco.com.br/open-banking/accounts/v1/accounts\nhttps://api.banco.com.br/open-banking/accounts/v1/accounts/{accountId}\nhttps://api.banco.com.br/open-banking/accounts/v1/accounts/{accountId}/balances\nhttps://api.banco.com.br/open-banking/accounts/v1/accounts/{accountId}/transactions\nhttps://api.banco.com.br/open-banking/accounts/v1/accounts/{accountId}/overdraft-limits\nTabela exemplo recursos fase 2"
+        },
+        {
+            "pagina": 58,
+            "conteudo": "Classificação da informação: Uso Interno\n58\nAPI Diretório (Family \nType) Recursos (resources)\nloans loans\nhttps://api.banco.com.br/open-banking/loans/v1/contracts\nhttps://api.banco.com.br/open-banking/loans/v1/contracts/{contractId}\nhttps://api.banco.com.br/open-banking/loans/v1/contracts/{contractId}/warranties\nhttps://api.banco.com.br/open-banking/loans/v1/contracts/{contractId}/payments\nhttps://api.banco.com.br/open-banking/loans/v1/contracts/{contractId}/scheduled-instalments\nfinancings financings\nhttps://api.banco.com.br/open-banking/financings/v1/contracts\nhttps://api.banco.com.br/open-banking/financings/v1/contracts/{contractId}\nhttps://api.banco.com.br/open-banking/financings/v1/contracts/{contractId}/warranties\nhttps://api.banco.com.br/open-banking/financings/v1/contracts/{contractId}/payments\nhttps://api.banco.com.br/open-banking/financings/v1/contracts/{contractId}/scheduled-instalment\nunarranged-\naccounts-\noverdraft\nunarranged-accounts-\noverdraft\nhttps://api.banco.com.br/open-banking/unarranged-accounts-overdraft/v1/contracts\nhttps://api.banco.com.br/open-banking/unarranged-accounts-overdraft/v1/contracts/{contractId}\nhttps://api.banco.com.br/open-banking/unarranged-accounts-overdraft/v1/contracts/{contractId}/warranties\nhttps://api.banco.com.br/open-banking/unarranged-accounts-overdraft/v1/contracts/{contractId}/payments\nhttps://api.banco.com.br/open-banking/unarranged-accounts-overdraft/v1/contracts/{contractId}/scheduled-instalments\ninvoice-financings invoice-financings\nhttps://api.banco.com.br/open-banking/invoice-financings/v1/contracts\nhttps://api.banco.com.br/open-banking/invoice-financings/v1/contracts/{contractId}\nhttps://api.banco.com.br/open-banking/invoice-financings/v1/contracts/{contractId}/warranties\nhttps://api.banco.com.br/open-banking/invoice-financings/v1/contracts/{contractId}/payments\nhttps://api.banco.com.br/open-banking/invoice-financings/v1/contracts/{contractId}/scheduled-instalments\nTabela exemplo recursos fase 2"
+        },
+        {
+            "pagina": 59,
+            "conteudo": "Classificação da informação: Uso Interno\n59\nAPI Diretório (Family \nType) Recursos (resources)\npayments payments-consents\npayments-pix\npayments-consents\nhttps://api.banco.com.br/open-banking/payments/v1/consents\nhttps://api.banco.com.br/open-banking/payments/v1/consents/{consentId}\npayments-pix\nhttps://api.banco.com.br/open-banking/payments/v1/pix/payments\nhttps://api.banco.com.br/open-banking/payments/v1/pix/payments/{paymentId}\nTabela exemplo recursos fase 3"
+        },
+        {
+            "pagina": 60,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Cadastrando um novo recurso de uma API\nRequisitos\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Authorisation Servers e clique \nno link do servidor de autorização na qual se \ndeseja cadastrar os recursos. O link cujo o nome \nrepresenta a marca estará disponível na coluna \nCustomer Friendly Name.\n3. Na janela Authorisation Server role a página para \nbaixo e selecione o menu API Resources.\n4. Clique no botão New API Resources para abrir a \njanela New API Resource.\n5. Na janela New API Resource, clique na caixa de \nseleção API Family Type e selecione uma das \nopções disponíveis.\n6. No campo ao lado, em Version especifique o valor \napropriado.\n60\n"
+        },
+        {
+            "pagina": 61,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Cadastrando um novo recurso de uma API\nRequisitos\n7. No campo ao Api Certification URI é necessário \ninformar a URI onde se encontra a localização do \ncertificado publicado no GitHub. Esse \npreenchimento é obrigatório para famílias de \nAPI’s a partir da Fase 2 e clique no botão Save.\n61\nNota 1: A URI a ser informada deve ser a presente no \nGitHub (https://github.com/OpenBanking-\nBrasil/conformance/tree/main/submissions/functional)\nno caminho conformance > submissions/functional\nselecionando a API especifica e informar a URI com o \nartefato de certificação .zip.\nExemplo:\nhttps://openbanking-\nbrasil.github.io/conformance/submissions/functional/<f\namily-type>/<version>/<file-name>.zip\nNota 2: No ambiente de Sandbox do Diretório, caso não \nexista uma certificação, é possível incluir um endereço \npara testes:\nhttps://openbanking-brasil.github.io/teste.zip"
+        },
+        {
+            "pagina": 62,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Cadastrando um novo recurso de uma API\nRequisitos\n7. De volta a tela API Resources, informe URI \nprincipal no campo API Discovery Endpoints, e em \nseguida pressione a tecla Enter.\n8. Para cada uma das famílias de APIs repita os \npassos 4 a 7.\n62\nNota: Todos os endpoints deverão ser preenchidos, \nincluindo os respectivos recursos. Para obter mais \ndetalhes sobre o padrão do endpoints e versão consulte \no Portal do Desenvolvedor do Open Banking."
+        },
+        {
+            "pagina": 63,
+            "conteudo": "Classificação da informação: Uso Interno\n63\nCADASTRAMENTO DE RECURSOS FASE 4A\nNa Fase 4A o padrão de cadastro segue alguns pontos de atenção:\n• O cadastro das APIs deve ser realizado individualmente, para cada um dos recursos/endpoints existirá um tipo \nde família (Family Type)\n• Diferente das outras famílias, ao requisitar o cadastro dessas APIs, será executado um teste de conformidade \nfuncional que verificará a conformidade da API com a especificação do Swagger\n• O diretório só permitirá o cadastro da API caso o teste de conformidade seja bem sucedido\n• Semelhante a Fase 1, a publicação do recurso é condiciona a IF possuir tal produto, logo, não necessariamente \ntodos os recursos precisam ser publicados\n*Exemplo de preenchimento\n"
+        },
+        {
+            "pagina": 64,
+            "conteudo": "Classificação da informação: Uso Interno\n64\nAPI Diretório (Family Type) Recursos (resources)\nopendata-investments\nopendata-investments_funds\nopendata-investments_bank-fixed-incomes\nopendata-investments_credit-fixed-incomes\nopendata-investments_variable-incomes\nopendata-investments_treasure-titles\nopendata-investment-funds\nhttps://api.banco.com.br/open-banking/opendata-investments/v1/funds\nopendata-investments-bank-fixed-incomes\nhttps://api.banco.com.br/open-banking/opendata-investments/v1/bank-fixed-incomes\nopendata-investments-credit-fixed-incomes\nhttps://api.banco.com.br/open-banking/opendata-investments/v1/credit-fixed-\nincomes\nopendata-investments-variable-incomes\nhttps://api.banco.com.br/open-banking/opendata-investments/v1/variable-incomes\nopendata-investments-treasure-titles\nhttps://api.banco.com.br/open-banking/opendata-investments/v1/treasure-titles\nopendata-capitalization opendata-capitalization_bonds opendata-capitalization-bonds\nhttps://api.banco.com.br/open-banking/opendata-capitalization/v1/bonds\nopendata-exchange opendata-exchange_online-rates\nopendata-exchange_vet-values\nopendata-exchange-online-rates\nhttps://api.banco.com.br/open-banking/opendata-exchange/v1/online-rates\nopendata-exchange-vet-values\nhttps://api.banco.com.br/open-banking/opendata-exchange/v1/vet-values\nopendata-acquiring-services opendata-acquiring-services_personals\nopendata-acquiring-services_businesses\nopendata-acquiring-services-personals\nhttps://api.banco.com.br/open-banking/opendata-acquiring-services/v1/personals\nopendata-acquiring-services-businesses\nhttps://api.banco.com.br/open-banking/opendata-acquiring-services/v1/businesses\nopendata-pension opendata-pension_risk-coverages\nopendata-pension_survival-coverages\nopendata-pension-risk-coverages\nhttps://api.banco.com.br/open-banking/opendata-pension/v1/risk-coverages\nopendata-pension-survival-coverages\nhttps://api.banco.com.br/open-banking/opendata-pension/v1/survival-coverages\nopendata-insurance\nopendata-insurance_automotives\nopendata-insurance_homes\nopendata-insurance_personals\nopendata-insurance-automotives\nhttps://api.banco.com.br/open-banking/opendata-insurance/v1/automotives\nopendata-insurance-homes\nhttps://api.banco.com.br/open-banking/opendata-insurance/v1/homes\nopendata-insurance-personals\nhttps://api.banco.com.br/open-banking/opendata-insurance/v1/personals\nTabela exemplo recursos Fase 4A"
+        },
+        {
+            "pagina": 65,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 2: Cadastrando um novo recurso de uma API com \ncertificação automática – Fase 4A\nRequisitos\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Authorisation Servers e clique \nno link do servidor de autorização na qual se \ndeseja cadastrar os recursos. O link cujo o nome \nrepresenta a marca estará disponível na coluna \nCustomer Friendly Name\n3. Na janela Authorisation Server role a página para \nbaixo e selecione o menu API Resources\n4. Clique no botão New API Resources para abrir a \njanela New API Resource\n5. Na janela New API Resource, clique na caixa de \nseleção API Family Type e selecione uma das \nopções disponíveis que possuem certificação \nautomática\n6. No campo ao lado, em Version especifique o valor \nda versão da API conforme especificação\n65\n"
+        },
+        {
+            "pagina": 66,
+            "conteudo": "Classificação da informação: Uso Interno\nRequisitos\n7. No campo THE URI FOR THE API é necessário \ninformar a URI referente ao recurso da API a ser \nregistrado\n8. A URI da API deve seguir o formato especificado \nno portal do desenvolvedor, caso contrário o \ndiretório irá retornar um erro, não permitindo a \ncontinuidade do cadastro\n9. Ao selecionar Save uma janela irá aparecer \ninformando que ao pressionar OK um teste de \nconformidade será executado contra o recurso \npreenchido acima\n66\nETAPA 2: Cadastrando um novo recurso de uma API com \ncertificação automática - Fase 4A\nNota 1: O valor informado no campo THE URI FOR THE \nAPI é a URI contra a qual o teste será executado.\nNota 2: Caso o teste de conformidade não seja bem \nsucedido é possível consultar os logs de execução do \nteste que impediu a publicação da API. Para isso basta \ncopiar a URI apresentada na mensagem de erro e colar \nna barra do navegador."
+        },
+        {
+            "pagina": 67,
+            "conteudo": "Classificação da informação: Uso Interno\nRequisitos\n11. Caso a execução seja mal sucedida, é possível \nconsultar os detalhes que geraram a falha em \nView Logs. \n12. Caso o teste seja bem sucedido, a nova API será \nadicionada automaticamente a tabela de recursos \ndo Authorisation Server\n13. A coluna referente a API CERTIFICATION URI \ntambém será preenchida automaticamente e \napresentada na tabela.\n14. Caso seja necessário atualizar a URI do recurso \nadicionado basta clicar no botão editar ou em \napagar.\n67\nETAPA 2: Cadastrando um novo recurso de uma API com \ncertificação automática - Fase 4A\nNota 1: Para mais detalhes sobre a certificação das APIs \nconsultar o menu Certificação de Conformidade no \nportal do desenvolvedor. \nNota 2: O Campo API CERTIFICATION URI estará \npreenchido com o link para o teste de conformidade \nexecutado com sucesso no momento do registro da API.\nNota 3: Qualquer edição desse cadastro iniciará uma \nnova execução do teste."
+        },
+        {
+            "pagina": 68,
+            "conteudo": "Classificação da informação: Uso Interno\nCriando um Software Statements\n09.\nAqui apresentamos a configuração necessária para criar uma \nnova declaração de software no Diretório.  \n68"
+        },
+        {
+            "pagina": 69,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Criando uma nova declaração de software\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Software Statements e clique \nno botão New Software Statement.\n3. Na janela New Software Statement preencha os \ncampos do formulário. O slide a seguir apresenta \ncada um dos campos em mais detalhes.\n69\nRequisitos"
+        },
+        {
+            "pagina": 70,
+            "conteudo": "Classificação da informação: Uso Interno\n70\nNome do campo Descrição Exemplo\nVersion*\nA versão do software deve ser definida para um valor \nnumérico, um número inteiro (por exemplo, 1) ou um \nnúmero de ponto flutuante (1,2, 2,2, 3,2 etc.).\n1\nClient Name*\nPara registro de software da instituição receptora (software \nstatement), no campo Client Name, recomenda-se usar o \nnome da Marca, de conhecimento do cliente. Se o nome da \nmarca foi declarado Authorisation Server, por exemplo, \npode-se usar o nome da marca que foi utilizado no cadastro \n(customer friendly server name). Este é o nome que a \ntransmissora irá receber e declarar ao cliente durante a \njornada.\nWizcredi\nClient URI* O site ou URI raiz do recurso, podendo ser o site \ninstitucional da organização. https://www.wizcredi.com.br/info.html\nPolicy URI Deve ser definido como uma sequência de texto que \nrepresenta uma URI única de política. https://www.wizcredi.com.br/policy.html\nLogo URI*\nDeve ser definida a URI para o logotipo da marca. Para \nobter mais detalhes sobre formato, dimensão e peso \nmáximo do arquivo consulte o Guia de Experiencia Fase 2.\nhttps://www.wizcredi.com.br/logo.svg\nRedirect URI*\nOs URIs de redirecionamento devem ser definidos como \numa string de texto que representa uma URI único de \nredirecionamento.\nhttps://www.wizcredi.com.br/cb1\nhttps://www.wizcredi.com.br/cb2\nTerms of Service \nURI\nDeve ser definido como uma string de texto que representa \numa URI única dos Termos de Serviço. https://www.wizcredi.com.br/tos.html\nDescription Deve ser definido como uma string de texto de sua escolha. Aplicativo Wizcredi para o segmento de varejo \nOn Behalf Of O campo “Em nome de” é classificado como opcional para \nimplementação. <Não se aplica para o contexto do Open Banking Brasil>\nDetalhamento dos campos\n*Campo obrigatório\nNotas\n• O campo Logo URI é o que a transmissora deverá utilizar para apresentar a logomarca da receptora. "
+        },
+        {
+            "pagina": 71,
+            "conteudo": "Classificação da informação: Uso Interno\n71\n10.\nEsta seção explica as etapas para criar uma reivindicação de \nautoridade de software. Esta etapa será necessária para definir \nas funções regulatórias que serão inseridas no Software \nStatement Assertion.\nCriando uma nova reivindicação de \nautoridade de software"
+        },
+        {
+            "pagina": 72,
+            "conteudo": "Classificação da informação: Uso Interno\n72\nETAPA 1: Criando reivindicação de autoridade de software\nRequisitos\n1. Necessário realizar a seção Cadastrando \nreivindicações de domínio de autoridade.\n2. Necessário realizar a seção Cadastrando \nreivindicações de autoridade.\n3. Necessário ter criado uma Criando um Software \nStatements para sua organização.\n4. No Diretório, selecione a sua organização e vá até \na página detalhes da organização.\n5. Selecione o menu Software Statements e clique \nno link contendo a declaração de software \npreviamente criada.\nNota: Para mais detalhes consulte a seção Funções \nregulatórias para mapeamentos OpenID e OAuth 2.0 no \ndocumento de especificação para implementadores do \nOpen Banking Brasil Financial-grade API Dynamic Client\nRegistration 1.0 Implementers Draft 1."
+        },
+        {
+            "pagina": 73,
+            "conteudo": "Classificação da informação: Uso Interno\n73\nRequisitos\n6. Na janela Software Statements Details, role a \npágina para baixo, selecione o menu Authority \nClaims e clique no botão New Software Authority \nClaims.\n7. Na janela New Software Authority Claims \npreencha os campos do formulário. O slide a \nseguir apresenta cada um dos campos em mais \ndetalhes.\nETAPA 1: Criando reivindicação de autoridade de software"
+        },
+        {
+            "pagina": 74,
+            "conteudo": "Classificação da informação: Uso Interno\n74\nNome do campo Descrição Exemplo\nAuthorisation \nDomain Name\nÉ apresentado o domínio de autorização para o qual esta a \nreivindicação de domínio está mapeada. Open Banking Brasil\nRole É apresentada a função mapeada para o domínio de \nautorização. DADOS\nDetalhamento dos campos\n*Campo obrigatório"
+        },
+        {
+            "pagina": 75,
+            "conteudo": "Classificação da informação: Uso Interno\n11.\nEsta seção explica as etapas para criar uma solicitação de \nassinatura de certificado para certificados de transporte e \nassinatura que não foram emitidos por uma autoridade de \ncertificação e para uso exclusivo em ambiente de Sandbox do \nDiretório.\n75\nCriando certificados de transporte e \nassinatura em Sandbox"
+        },
+        {
+            "pagina": 76,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Criando um novo certificado de transporte\nRequisitos\n1. Necessário ter criado uma Criando um Software \nStatements para sua organização.\n2. No Diretório, selecione a sua organização e vá até \na página detalhes da organização.\n3. Selecione o menu Software Statements e clique \nno link contendo a declaração de software \npreviamente criada.\n4. Na janela Software Statements Details, role a \npágina para baixo, selecione o menu Certificates e \nclique no botão New Certificate.\n5. Na janela New Certificate, na caixa de seleção \nSelect Certificate Type selecione a opção BRCAC e \nclique no botão Continue. \n6. No passo seguinte, exemplo a seguir acesse a URL \ncertificate-generation-instructions e descarregue \nos arquivos de suporte.\n76\n"
+        },
+        {
+            "pagina": 77,
+            "conteudo": "Classificação da informação: Uso Interno\nRequisitos\n7. Usando sua própria geração de chaves e políticas \nde gerenciamento, um par de chaves públicas \nprivadas deve ser criado. A seguir está um \nexemplo usando OpenSSL e apenas para fins \nilustrativos.\n8. Edite o arquivo brcac.cnf de forma que as \ninformações contidas neste arquivo sejam \nidênticas as informações contidas no Diretório na \npágina de detalhes da organização.\n9. Edite o arquivo brcac.sh para que referencie o \ncaminho do arquivo brcac.cnf.\n10. Execute o arquivo brcac.sh através do prompt de \ncomando para a geração do par CSR e KEY.\n11. No Diretório, selecione a opção Upload CSR/PEM\ne localize o brcac.csr gerado pela execução do \npasso anterior e clique no botão Continue.\n77\nETAPA 1: Criando um novo certificado de transporte\n"
+        },
+        {
+            "pagina": 78,
+            "conteudo": "Classificação da informação: Uso Interno\nRequisitos\n12. Aguarde o carregamento do arquivo para o \nDiretório e no passo seguinte clique no botão \nDone.\n13. Na tela anterior de certificates, vá até actions e \nclique na seta de download. Salve o \n<arquivo>.pem em uma pasta local.\n78\nETAPA 1: Criando um novo certificado de transporte\n"
+        },
+        {
+            "pagina": 79,
+            "conteudo": "Classificação da informação: Uso Interno\n79\nETAPA 2: Criando um novo certificado de assinatura\nRequisitos\n1. No Diretório, selecione a sua organização e vá até a \npágina detalhes da organização.\n2. Selecione o menu Organisation Certificates e clique no \nbotão New Organisation Certificates.\n3. Na janela New Organisation Certificate, na caixa de \nseleção Select Certificate Type selecione a opção \nBRSEAL e clique no botão Continue. \n4. No passo seguinte, exemplo a seguir acesse a URL \ncertificate-generation-instructions e descarregue os \narquivos de suporte.\n5. Usando sua própria geração de chaves e políticas de \ngerenciamento, um par de chaves públicas privadas \ndeve ser criado. A seguir está um exemplo usando \nOpenSSL e apenas para fins ilustrativos.\n6. Edite o arquivo brseal.cnf de forma que as informações \ncontidas neste arquivo sejam idênticas as informações \ncontidas no Diretório na página de detalhes da \norganização.\n* Maiores informações podem ser encontradas no através \ndesse link."
+        },
+        {
+            "pagina": 80,
+            "conteudo": "Classificação da informação: Uso Interno\n80\nETAPA 2: Criando um novo certificado de assinatura\nRequisitos\n7. Edite o arquivo brseal.sh para que referencie o \ncaminho do arquivo brseal.cnf.\n8. Execute o arquivo brcac.sh através do prompt de \ncomando para a geração do par CSR e KEY.\n9. No Diretório, selecione a opção Upload CSR/PEM\ne localize o brseal.csr gerado pela execução do \npasso anterior e clique no botão Continue.\n10. Aguarde o carregamento do arquivo para o \nDiretório e no passo seguinte clique no botão \nDone.\n11. Na tela anterior de certificates, vá até actions e \nclique na seta de download. Salve o \n<arquivo>.pem em uma pasta local.\n"
+        },
+        {
+            "pagina": 81,
+            "conteudo": "Classificação da informação: Uso Interno\n12.\nEsta seção explica as etapas para importar certificados que \nforam emitidos por uma autoridade de certificação e para uso \nexclusivo em ambiente de Produção do Diretório.\n81\nCarregando certificados emitidos por \nautoridade de certificação em Produção "
+        },
+        {
+            "pagina": 82,
+            "conteudo": "Classificação da informação: Uso Interno\n82\nETAPA 1: Carregando certificado de transporte\nRequisitos\n1. Necessário ter criado uma Criando um Software \nStatements para sua organização.\n2. No Diretório, selecione a sua organização e vá até \na página detalhes da organização.\n3. Selecione o menu Software Statements e clique \nno link contendo a declaração de software \npreviamente criada.\n4. Na janela Software Statements Details, role a \npágina para baixo, selecione o menu Certificates e \nclique no botão New Certificate.\n5. Na janela New Certificate, na caixa de seleção \nSelect Certificate Type selecione a opção \nEXTERNAL BRCAC e clique no botão Continue.\n6. No passo seguinte, em Generate CSR, clique no \nbotão Continue.\n"
+        },
+        {
+            "pagina": 83,
+            "conteudo": "Classificação da informação: Uso Interno\n83\n7. Na opção Upload CSR/PEM, localize o \n<arquivo>.csr e clique no botão Continue.\n8. Aguarde o carregamento do arquivo para o \nDiretório e no passo seguinte clique no botão \nDone.\n9. Na tela anterior de certificates, vá até actions e \nclique na seta de download. Salve o \n<arquivo>.pem em uma pasta local.\nETAPA 1: Carregando certificado de transporte\nRequisitos\n"
+        },
+        {
+            "pagina": 84,
+            "conteudo": "Classificação da informação: Uso Interno\n84\nETAPA 2: Carregando certificado de assinatura\nRequisitos\n1. No Diretório, selecione a sua organização e vá até \na página detalhes da organização.\n2. Selecione o menu Organisations Certificate e \nclique no botão New Organisations Certificate.\n3. Na janela New Organisations Certificate, na caixa \nde seleção Select Certificate Type selecione a \nopção BRSEAL EXTERNAL e clique no botão\nContinue. \n4. No passo seguinte, em Generate CSR, clique no \nbotão Continue.\n7. Na opção Upload CSR/PEM, localize o \n<arquivo>.csr e clique no botão Continue.\n8. Aguarde o carregamento do arquivo para o \nDiretório e no passo seguinte clique no botão \nDone.\n9. Na tela anterior em Organisation Certificates, vá \naté actions e clique na seta de download. Salve o \n<arquivo>.pem em uma pasta local."
+        },
+        {
+            "pagina": 85,
+            "conteudo": "Classificação da informação: Uso Interno\n85\n13.\nEsta seção explica as etapas necessárias para realizar o cadastro \nde um novo administrador da organização.\nCadastrando administradores da \norganização"
+        },
+        {
+            "pagina": 86,
+            "conteudo": "Classificação da informação: Uso Interno\n86\nETAPA 1: Cadastrando um administrador da organização\nRequisitos\n1. No Diretório, localize e selecione a sua \norganização.\n2. Selecione o menu Organisation Administrator e \nclique no botão New Organisation Administrators.\n3. Na janela New Organisation Administrator \npreencha o campo do formulário. O slide a seguir \napresenta cada um dos campos em mais detalhes.\n4. Clique no botão Save.\nNOTA: Somente administradores da organização podem \ncadastrar novos administradores.\n"
+        },
+        {
+            "pagina": 87,
+            "conteudo": "Classificação da informação: Uso Interno\nObtendo um Software Statements \nAssertion\n14.\nUma Software Statements Assertion (SSA) é um JWT assinado \ndo diretório que contém todas as informações sobre um \naplicativo que existe em um determinado momento no \ndiretório. Inclui a localização de todas as chaves públicas \nvinculadas a esta declaração de software e todos os outros \nmetadados de que um banco precisa para validar a legitimidade \ndo aplicativo.\n87"
+        },
+        {
+            "pagina": 88,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Criando uma nova declaração de software assinada\n1. Necessário ter criado uma Criando um Software \nStatements para sua organização.\n2. No Diretório, localize e selecione a sua \norganização.\n3. Vá até o menu Software Statement, acesse o \nartefato criado anteriormente clicando no link \nCLIENT NAME.\n4. Na janela Software Statement Details, role a \npágina para baixo e selecione o menu Software \nStatements Assertion.\n5. Clique no botão Copy to Clipboard para copiar o \nSSA gerado pelo Diretório.\n88\nRequisitos\n"
+        },
+        {
+            "pagina": 89,
+            "conteudo": "Classificação da informação: Uso Interno\nConfigurando eventos de notificação \nno Diretório\n15.\n89\nAqui apresentamos a configuração de webhook no Diretório   "
+        },
+        {
+            "pagina": 90,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Inscrever-se em um tópico\n1. Em seu navegador, navegue até webhook.site e \numa URL única e aleatória será gerada \nautomaticamente. Ela poderá ser utilizada para \ntestar e depurar Webhooks e solicitações HTTP.\n2. Selecione a URL e copie.\n90\nRequisitos"
+        },
+        {
+            "pagina": 91,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 2: Solicitando uma subscrição\n1. No Diretório, selecione a sua organização e vá até \na página detalhes da organização.\n2. Selecione o menu Authorisation Servers e em \nactions clique no ícone editar.\n3. Na página Authorisation Server Information cole a \nURL obtida na Etapa 1 no campo Notification \nWebhook endpoint.\n91\nRequisitos"
+        },
+        {
+            "pagina": 92,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 3: Confirmando uma subscrição\n1. De volta ao webhook.site, role para baixo e no \ncampo de texto Raw Context selecione e copie a \nURL em SubscribeURL para se subscrever no \ntópico.\n2. Em uma nova aba do navegador, cole a URL \nobtida no passo anterior.\n3. Pronto! A partir daqui, toda e qualquer \nmodificação que ocorra no Diretório será \nnotificada através de eventos.\n92\nRequisitos"
+        },
+        {
+            "pagina": 93,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 4: Analisando um evento de notificação\n1. No Diretório, selecione a sua organização e vá até \na página detalhes da organização.\n2. Selecione o menu Software Statement e em \nactions clique no ícone editar.\n3. Na janela Software Statement Details vá até o \ncampo description e digite qualquer valor e clique \nno botão Salvar.\n4. Neste momento, o Diretório irá enviar uma \nnotificação push. \n5. De volta ao webhook.site, clique no primeiro \nevento que surge na lista a esquerda da tela.\n6. Role a tela para baixo e no campo de texto Raw\nContext localize o novo valor adicionado no \natributo description.\n93\nRequisitos"
+        },
+        {
+            "pagina": 94,
+            "conteudo": "Classificação da informação: Uso Interno\nObtendo um token de acesso para as \nAPIs do Diretório\n16.\nPara acessar as APIs do Diretório do Open Banking, você \nprecisará de um token de acesso. Esta seção descreve as etapas \nnecessárias para adquirir tokens de acesso.\n94"
+        },
+        {
+            "pagina": 95,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Localizando o identificador do cliente\nRequisitos\n1. Necessário ter criado uma Criando um Software \nStatements para sua organização.\n2. No Diretório, localize e selecione a sua \norganização.\n3. Vá até o menu Software Statement, acesse o \nartefato criado anteriormente clicando no link \nCLIENT NAME.\n4. Na janela Software Statement Details localize o \ncampo CLIENT ID, selecione e copie o valor.\n95\n"
+        },
+        {
+            "pagina": 96,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 2: Localizando a URI de token no Diretório\nRequisitos\n1. No navegador, acesse a URI de descoberta de \nconexão OpenID de acordo com o ambiente \nutilizado:\nSandbox \nhttps://auth.sandbox.directory.openbankingbrasil\n.org.br/.well-known/openid-configuration\nProdução\nhttps://auth.directory.openbankingbrasil.org.br/.\nwell-known/openid-configuration\n2. Localize o endpoint de token que será utilizado \npara trocar as credenciais de autenticação \npara tokens de acesso.\n96\n"
+        },
+        {
+            "pagina": 97,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 3: Adicionando certificados SSL por domínio\n1. Necessário ter criado uma Criando uma \nsolicitação de Assinatura de Certificado (CSR).\n2. Para fins ilustrativos será utilizado o Postman para \nacessar as APIs do Diretório do Open Banking. \nAssim, no Postman, selecione o menu File e em \nseguida o menu Settings.\n3. Na janela Settings, selecione o menu Certificates e \nclique no link Add Certificate.\n4. Na aba Certificates, no campo Host insira um dos \nvalores descritos a seguir de acordo com o \nambiente utilizado:\nSandbox\nmatls-\nauth.sandbox.directory.openbankingbrasil.org.br\nProdução\nmatls-auth.directory.openbankingbrasil.org.br\n97\nRequisitos"
+        },
+        {
+            "pagina": 98,
+            "conteudo": "Classificação da informação: Uso Interno\nRequisitos\n5. Em CRT file, clique no botão Select file, e localize o \n<arquivo>.pem obtido na seção Criando uma \nsolicitação de Assinatura de Certificado (CSR).\n6. No passo seguinte, clique no botão KEY File e \nlocalize o <arquivo>.key criado no processo de \ngeração de chaves na seção Criando uma \nsolicitação de Assinatura de Certificado (CSR).\n7. Clique no botão Add.\n98\nETAPA 3: Adicionando certificados SSL por domínio"
+        },
+        {
+            "pagina": 99,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 4: Obtendo um token de acesso\n1. Para adicionar uma nova requisição a uma \ncoleção, abra uma nova aba e salve a partir daí, \nou em Collection à esquerda do Postman, clique \nem ‘...’ na coleção e escolha Add Request. Você \ntambém pode criar uma solicitação clicando no \nmenu File > New, e em seguida Request.\n2. No campo Enter request URL, digite o valor obtido \nda URI de token mencionado na etapa 2.\n3. Defina o tipo da operação para POST.\n4. Vá para a guia Body e selecione o botão de opção \n‘x-www-form-urlencoded’.\n5. Insira os parâmetros como descritos a seguir:\nclient_id = <valor obtido no CLIENT ID na etapa 1>\ngrant_type = client_credentials\nscope = directory:software\n6. Uma vez que todos os parâmetros e valores \nestejam preenchidos, clique no botão Send.\n7. Selecione e copie o valor retornado no atributo \naccess_token. 99\nRequisitos"
+        },
+        {
+            "pagina": 100,
+            "conteudo": "Classificação da informação: Uso Interno\nListando as organizações cadastradas \nno Diretório via API\n17.\nPara acessar a API Organisations no Diretório, você precisará de \num token de acesso. Esta seção descreve as etapas necessárias \npara listar e visualizar os detalhes das organizações cadastradas \nno Diretório.\n100"
+        },
+        {
+            "pagina": 101,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Obtendo detalhes das organizações\n1. Necessário ter um token de acesso. Veja mais \ndetalhes em Obtendo um token de acesso para \nacessar as APIs do Diretório.\n2. Para fins ilustrativos será utilizado o Postman para \nacessar as APIs do Diretório do Open Banking. \nAssim, para adicionar uma nova requisição a uma \ncoleção, abra uma nova aba e salve a partir daí, \nou em Collection à esquerda do Postman, clique \nem ‘...’ na coleção e escolha Add Request. Você \ntambém pode criar uma solicitação clicando no \nmenu File > New, e em seguida Request.\n3. No campo Enter request URL, insira um dos \nvalores descritos a seguir de acordo com o \nambiente utilizado:\nSandbox\nhttps://matls-\nauth.sandbox.directory.openbankingbrasil.org.br/\norganisations\nProdução\nhttps://matls-\nauth.directory.openbankingbrasil.org.br/organisat\nions\n101\nRequisitos"
+        },
+        {
+            "pagina": 102,
+            "conteudo": "Classificação da informação: Uso Interno\n4. Defina o tipo da operação para GET.\n5. Vá para a guia Authorisation e na caixa de seleção \nType selecione a opção Bearer Token.\n6. Na coluna ao lado, no campo Token cole o \naccess_token obtido na seção Obtendo um token \nde acesso para acessar as APIs do Diretório.\n7. Uma vez que todos os valores estejam \npreenchidos, clique no botão Send. Você verá a \nresposta de dados JSON do servidor no painel \ninferior.\nNota: Para localizar uma organização mãe que \npertença a um conglomerado, você poderá percorrer \nna lista de resposta de dados JSON do servidor, \ncapturando o identificador no atributo \nParentOrganisationReference das organizações filhas \ne localizar o mesmo ID na organização cujo o atributo \nRegistrationId contenha este mesmo valor. \n102\nETAPA 1: Obtendo detalhes das organizações\nRequisitos"
+        },
+        {
+            "pagina": 103,
+            "conteudo": "Classificação da informação: Uso Interno\nListando os servidores de autorização \nde uma organização via API\n18.\nAqui apresentamos os passos para listar os servidores de \nautorização de uma organização.\n103"
+        },
+        {
+            "pagina": 104,
+            "conteudo": "Classificação da informação: Uso Interno\nETAPA 1: Listando os servidores de autorização\n1. Necessário ter um token de acesso. Veja mais \ndetalhes em Obtendo um token de acesso para \nacessar as APIs do Diretório.\n2. Necessário ter realizado os passos da sessão \nListando as organizações cadastradas no Diretório \nvia API.\n3. Para fins ilustrativos será utilizado o Postman para \nacessar as APIs do Diretório do Open Banking. \nAssim, para adicionar uma nova requisição a uma \ncoleção, abra uma nova aba e salve a partir daí, \nou em Collection à esquerda do Postman, clique \nem ‘...’ na coleção e escolha Add Request. Você \ntambém pode criar uma solicitação clicando no \nmenu File > New, e em seguida Request.\n4. No campo Enter request URL, insira um dos \nvalores descritos a seguir de acordo com o \nambiente utilizado:\nSandbox\nhttps://matls-\nauth.sandbox.directory.openbankingbrasil.org.br/\norganisations/<organisation_id>/authorisationser\nvers 104\nRequisitos"
+        },
+        {
+            "pagina": 105,
+            "conteudo": "Classificação da informação: Uso Interno\nProdução\nhttps://matls-\nauth.directory.openbankingbrasil.org.br/organisat\nions/<organisation_id>/authorisationservers\n5. Defina o tipo da operação para GET.\n6. Vá para a guia Authorisation e na caixa de seleção \nType selecione a opção Bearer Token.\n7. Na coluna ao lado, no campo Token cole o \naccess_token obtido na seção Obtendo um token \nde acesso para acessar as APIs do Diretório.\n8. Uma vez que todos os valores estejam \npreenchidos, clique no botão Send. Você verá a \nresposta de dados JSON do servidor no painel \ninferior.\nNota: Na resposta de dados JSON do servidor o \natributo CustomerFriendlyName contém o valor da \nmarca e o CustomerFriendlyLogoUri o logotipo \nvinculado a marca.\n105\nETAPA 1: Listando os servidores de autorização\nRequisitos"
+        },
+        {
+            "pagina": 106,
+            "conteudo": "Classificação da informação: Uso Interno\nProdução\nhttps://matls-\nauth.directory.openbankingbrasil.org.br/organisat\nions/<organisation_id>/authorisationservers\n5. Defina o tipo da operação para GET.\n6. Vá para a guia Authorisation e na caixa de seleção \nType selecione a opção Bearer Token.\n7. Na coluna ao lado, no campo Token cole o \naccess_token obtido na seção Obtendo um token \nde acesso para acessar as APIs do Diretório.\n8. Uma vez que todos os valores estejam \npreenchidos, clique no botão Send. Você verá a \nresposta de dados JSON do servidor no painel \ninferior.\nNota: Na resposta de dados JSON do servidor o \natributo CustomerFriendlyName contém o valor da \nmarca e o CustomerFriendlyLogoUri o logotipo \nvinculado a marca.\n106\nETAPA 1: Listando os servidores de autorização\nRequisitos"
+        },
+        {
+            "pagina": 107,
+            "conteudo": "Classificação da informação: Uso Interno\n107\nObtendo um Software Statement via \nAPI\n19.\nAqui apresentamos os passos para obter um Software \nStatement (SS) no Diretório via API."
+        },
+        {
+            "pagina": 108,
+            "conteudo": "Classificação da informação: Uso Interno\n108\nETAPA 1: Obtendo um SS no Diretório via API\n1. Necessário ter um token de acesso. Veja mais \ndetalhes em Obtendo um token de acesso para \nacessar as APIs do Diretório.\n2. Necessário ter realizado os passos da sessão \nListando as organizações cadastradas no Diretório \nvia API.\n3. Para fins ilustrativos será utilizado o Postman para \nacessar as APIs do Diretório do Open Banking. \nAssim, para adicionar uma nova requisição a uma \ncoleção, abra uma nova aba e salve a partir daí, \nou em Collection à esquerda do Postman, clique \nem ‘...’ na coleção e escolha Add Request. Você \ntambém pode criar uma solicitação clicando no \nmenu File > New, e em seguida Request.\n4. No campo Enter request URL, insira um dos \nvalores descritos a seguir de acordo com o \nambiente utilizado:\nSandbox\nhttps://matls-\nauth.sandbox.directory.openbankingbrasil.org.br/\norganisations/<organisation_id>/softwarestateme\nnts\nRequisitos\n"
+        },
+        {
+            "pagina": 109,
+            "conteudo": "Classificação da informação: Uso Interno\n109\nProdução\nhttps://matls-\nauth.directory.openbankingbrasil.org.br/organisat\nions/<organisation_id>/softwarestatements\n5. Defina o tipo da operação para GET.\n6. Vá para a guia Authorisation e na caixa de seleção \nType selecione a opção Bearer Token.\n7. Na coluna ao lado, no campo Token cole o \naccess_token obtido na seção Obtendo um token \nde acesso para acessar as APIs do Diretório.\n8. Uma vez que todos os valores estejam \npreenchidos, clique no botão Send. Você verá a \nresposta de dados JSON do servidor no painel \ninferior.\nRequisitos\nETAPA 1: Obtendo um SS no Diretório via API\n"
+        },
+        {
+            "pagina": 110,
+            "conteudo": "Classificação da informação: Uso Interno\n110\nObtendo um Software Statement \nAssertion via API\n20.\nAqui apresentamos os passos para obter um Software \nStatement Assertion (SSA) no Diretório via API."
+        },
+        {
+            "pagina": 111,
+            "conteudo": "Classificação da informação: Uso Interno\n111\nETAPA 1: Obtendo um SSA do Diretório via API\n1. Necessário ter um token de acesso. Veja mais \ndetalhes em Obtendo um token de acesso para \nacessar as APIs do Diretório.\n2. Necessário ter realizado os passos da sessão \nListando as organizações cadastradas no Diretório \nvia API.\n3. Necessário ter realizado os passos da sessão \nObtendo um Software Statement via API.\n4. Para fins ilustrativos será utilizado o Postman para \nacessar as APIs do Diretório do Open Banking. \nAssim, para adicionar uma nova requisição a uma \ncoleção, abra uma nova aba e salve a partir daí, \nou em Collection à esquerda do Postman, clique \nem ‘...’ na coleção e escolha Add Request. Você \ntambém pode criar uma solicitação clicando no \nmenu File > New, e em seguida Request.\n5. No campo Enter request URL, insira um dos \nvalores descritos a seguir de acordo com o \nambiente utilizado:\nRequisitos\n"
+        },
+        {
+            "pagina": 112,
+            "conteudo": "Classificação da informação: Uso Interno\nSandbox\nhttps://matls-\nauth.sandbox.directory.openbankingbrasil.org.br/\norganisations/<organisation_id>/softwarestateme\nnts/<software_id>/assertion\nProdução\nhttps://matls-\nauth.directory.openbankingbrasil.org.br/organisat\nions/<organisation_id>/softwarestatements/<soft\nware_id>/assertion\n6. Defina o tipo da operação para GET.\n7. Vá para a guia Authorisation e na caixa de seleção \nType selecione a opção Bearer Token.\n8. Na coluna ao lado, no campo Token cole o \naccess_token obtido na seção Obtendo um token \nde acesso para acessar as APIs do Diretório.\n9. Uma vez que todos os valores estejam \npreenchidos, clique no botão Send. Você verá a \nresposta de dados JSON do servidor no painel \ninferior.\n112\nRequisitos\nETAPA 1: Obtendo um SSA do Diretório via API"
+        },
+        {
+            "pagina": 113,
+            "conteudo": "Classificação da informação: Uso Interno\nComo obter suporte ao Diretório\n21.\n113\nAqui apresentamos as formas de contato para suporte ao \nDiretório Central."
+        },
+        {
+            "pagina": 114,
+            "conteudo": "Classificação da informação: Uso Interno\nTodas as consultas, problemas ou solicitações de \nsuporte precisam ser roteados por meio do Service \nDesk.\nO Service Desk do Open Banking Brasil pode ser \nacessado pelo endereço: \nhttps://servicedesk.openbankingbrasil.org.br/\nÉ possível abrir chamados de Solicitação de \nInformações, Melhorias e incidentes de \nindisponibilidade ou problemas de performance.\n114\nService Desk\n"
+        },
+        {
+            "pagina": 115,
+            "conteudo": "Classificação da informação: Uso Interno\n115\nAnexos\n22."
+        },
+        {
+            "pagina": 116,
+            "conteudo": "Classificação da informação: Uso Interno\n116\nModelos de Segurança\nAnexos"
+        },
+        {
+            "pagina": 117,
+            "conteudo": "Classificação da informação: Uso Interno\n117\nCan\nAccess \nDirectory\nCan\nEdit Org \nContacts\nCan Add \nRoles and \nDomain \nClaims\nCan\nIssue/Sign\nTnCs\nCan Add \nS.S. \nCan Add/\nManage \nA.S.\nCan Edit\nICP-BR\nCerts\nCan Add \nOrg Admin\nCan Add  \nPrimary \nTechnical \nContact\nCan Add  \nSecondary \nTechnical \nContact\nCan Add  \nPrimary \nBusiness \nContact \nCan Add  \nSecondary \nBusiness \nContact\nCan Add  \nPrimary \nService \nDesk \nContact\nCan Add  \nSecondary \nService \nDesk \nContact\nCan Add  \nPrimary \nDispute \nContact\nCan Add  \nSecondary \nDispute \nContact\nCan Add  \nPrimary \nPortal \nContact\nCan Add  \nSecondary \nPortal \nContact\nCan Add  \nPrimary \nCentralized \nPlataform\nCan Add  \nSecondary \nCentralized \nPlataform\nPublic No No No No No No No No No No No No No No No No No No No No\nGlobal Admin Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes\nOrg Admin Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes\nPrimary Technical Contact Yes No No No Yes No Yes No Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes\nSecondary Technical Contact Yes No No No Yes No Yes No No No No No No No No No No No No No\nPrimary Business Contact Yes No No No Yes No Yes No Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes\nSecondary Business Contact Yes No No No Yes No Yes No No No No No No No No No No No No No\nPrimary Service Desk Contact Yes No No No No No No No No No No No No Yes No No No No No No\nSecondary Service Desk Contact No No No No No No No No No No No No No No No No No No No No\nPrimary Dispute Contact Yes No No No No No No No No No No No No No No Yes No No No No\nSecondary Dispute Contact No No No No No No No No No No No No No No No No No No No No\nPrimary Portal Contact Yes No No No No No No No No No No No No No No No No Yes No No\nSecondary Portal Contact No No No No No No No No No No No No No No No No No No No No\nPrimary Centralized Platform \nContact Yes No No No No No No No No No No No No No No No No No No Yes\nSecondary Centralized Platform \nContact No No No No No No No No No No No No No No No No No No No No\nMODELO DE SEGURANÇA\nPoderes dos Usuários no Diretório"
+        },
+        {
+            "pagina": 118,
+            "conteudo": "Classificação da informação: Uso Interno\n118\nRecomendações para receptores\nAnexos"
+        },
+        {
+            "pagina": 119,
+            "conteudo": "Classificação da informação: Uso Interno\n119\nExibir a(s) marca(s) em função do nome da mesma (Marca do \nAuthorisation Server) e da literal que o cliente informou.\nCaso sejam identificados mais de uma marca de mesmo nome, exibir \numa única vez para o cliente.\nValidar se a marca/Authorisation Servers possui os recursos (família \nde API’s) necessários para a jornada.\nEm “ver detalhes da marca” exibir todas as organizações que estão \nrelacionadas a ela:\n• Se a marca estiver em mais do que uma organização, exibir todas \nas organizações que a mesma está cadastrada;\n• Organização que é hierarquicamente inferior a organização (mãe) \nque a marca está cadastrada, desde que a mesma (filha) não \npossua uma marca cadastrada para ela.\nPara saber as instituições hierarquicamente inferiores e necessário \nutilizar o campo parente. No mesmo será indicado o CNPJ da \ninstituição mãe, se a mesma for uma filha.\nSe for mãe, terá o campo sem dado.\nRecomendações para busca \nIdentifica Marca\nComplemento ao Guia de Experiencia para Receptores \nde Dados\n"
+        },
+        {
+            "pagina": 120,
+            "conteudo": "Classificação da informação: Uso Interno\n120\nRecomendações para busca \nIdentifica Instituição\nComplemento ao Guia de Experiencia para Receptores \nde Dados\nExibir a(s) marca(s) em função do nome da mesma (Marca do \nAuthorisation Server) e da literal que o cliente informou.\nExibir a(s) instituição(ões) em funções do nome da organização e da \nliteral que o cliente informou.\nAplicar a mesma regra utilizada para exibir as instituições de uma \nmarca para demonstrar quantas instituições estão associadas a marca \nretornada, quando a busca identificar uma instituição.\n"
+        },
+        {
+            "pagina": 121,
+            "conteudo": "Classificação da informação: Uso Interno\n121\nRecomendações para busca \nIdentifica Instituição\nComplemento ao Guia de Experiencia para Receptores \nde Dados\nNo detalhamento da marca, exibir a marca informada no \nAuthorisation Server\nA descrição da marca cadastrada no Autorisation Server.\nE para a instituições que participam da marca, aplicar a mesma regra \nutilizada para exibir as instituições de uma marca.\nMaiores informações:\nhttps://github.com/OpenBanking-Brasil/specs-\nseguranca/blob/main/aspsp-user-guide-ptbr.md\nhttps://github.com/OpenBanking-Brasil/specs-\nseguranca/blob/main/tpp-user-guide-ptbr.md\n"
+        },
+        {
+            "pagina": 122,
+            "conteudo": "Classificação da informação: Uso Interno\n122\nDado UI Diretório API\nNome LEGAL NAME (ING)\nNOME LEGAL (PT)\nLegalEntityName\nCNPJ REGISTRATION NUMBER-CNPJ (ING)\nNÚMERO DE REGISTRO – CNPJ (PT) RegistrationNumber\nMãe PARENT ORGANISATION REFERENCE ID (ING)\nNÚMERO DE REGISTRO DA ORGANIZAÇÃO MÃE – CNPJ (PT) ParentOrganisationReference\nTabela da dados utilizado na recomendação\nOrganização"
+        },
+        {
+            "pagina": 123,
+            "conteudo": "Classificação da informação: Uso Interno\n123\nDado UI Diretório API\nMarca CUSTOMER FRIENDLY SERVER NAME (ING)\nNOME DO SERVIDOR (PT)\nCustomerFriendlyName\nDescrição DESCRIPTION (ING)\nDESCRIÇÃO (PT) CustomerFriendlyDescription\nTabela da dados utilizado na recomendação\nAuthorisation Server"
+        },
+        {
+            "pagina": 124,
+            "conteudo": "Classificação da informação: Uso Interno\n124\nAlterações da versão\nAnexos"
+        },
+        {
+            "pagina": 125,
+            "conteudo": "Classificação da informação: Uso Interno\n125\n• Adição: foi adicionado um novo detalhamento apresentando os Tipos de \nUsuários.\n• Adição: foi adicionado no rodapé do slide Cadastramento de Conglomerado\numa nota que caso a organização faça parte de um conglomerado é \nfundamental referenciar as organizações filhas com a organização mãe.\n• Adição: foi adicionada uma nova seção Cadastrando Contatos de Notificação.\n• Adição: foi adicionada uma nova seção Cadastrando reivindicações de \ndomínio de autoridade.\n• Adição: foi adicionada uma nova seção Cadastrando reivindicações de \nautoridade.\n• Adição: foi adicionada uma nova seção Criando uma nova reivindicação de \nautoridade de software.\n• Alteração: a seção Criando uma solicitação de Assinatura de Certificado (CSR) \nem Sandbox foi ajustada para Criando certificados de transporte e assinatura \nem Sandbox.\nALTERAÇÕES DA VERSÃO"
+        },
+        {
+            "pagina": 126,
+            "conteudo": "Classificação da informação: Uso Interno\n126\n• Adição: foi adicionado a seção Carregando certificados emitidos por \nautoridade de certificação em Produção.\n• Adição: foi adicionado a seção Modelo de Segurança – Poderes dos Usuários \nno Diretório.\n• Alteração: campo \"Description\" no cadastro do Authorisation Server agora é \nobrigatório, para maiores detalhes  Cadastrando um Authorisation Server.\nAtualização da versão 02/07/2021\n• Alteração: foi adicionado recomendações e casos de uso para exemplificar o \ncadastramento de marcas.\n• Alteração: foi alterado o detalhamento do campo “Descrição” do \nAuthorisation Server.\n• Adição: foi adicionado uma descrição do logotipo.\n• Adição: foi adicionado a seção Recomendações para receptores com \nrecomendações para a montagem de telas de experiencia de usuário dado a \nestrutura de dados do Diretório.\nALTERAÇÕES DA VERSÃO"
+        },
+        {
+            "pagina": 127,
+            "conteudo": "Classificação da informação: Uso Interno\n127\nAtualização da versão 09/07/2021\n• Alteração: Foi a incluído recomendação para cadastramento de recurso tanto \nda Fase 1 quanto da Fase 2 em Cadastrando recursos de uma API.\n• Alteração: Foi alterado a descrição do campo Customer Friendly Server Name\ndo Cadastrando um Authorisation Server.\n• Alteração: Foi alterado a descrição do campo Client Name do Criando um \nSoftware Statements.\n• Alteração: Adicionado um ponto de atenção em Obtendo um Software \nStatements Assertion.\n• Alteração: Adicionado um ponto de atenção em Criando certificados de \ntransporte e assinatura em Sandbox.\nAtualização da versão 19/08/2021\n• Alteração: Correção dos exemplos de Fase 2 e orientações Fase 3 Cadastrando \nrecursos de uma API.\nALTERAÇÕES DA VERSÃO"
+        },
+        {
+            "pagina": 128,
+            "conteudo": "Classificação da informação: Uso Interno\n128\nAtualização da versão 10/09/2021\n• Ponto de atenção sobre Authorisation Server em Cadastrando um \nAuthorisation Server.\n• Mudança na descrição do campo Client URI e retirada dos campos (mode e \nenvironment) Criando um Software Statements.\n• Ponto de atenção sobre usuários de plataformas em Cadastrando \nreivindicações de autoridade.\n• Alteração quanto ao cadastramento de recursos em Cadastrando recursos de \numa API.\nAtualização da versão 28/09/2021\n• Alteração na definição da modalidade PAGTO em Detalhamento das \nmodalidades.\nAtualização da versão 04/10/2021\n• Adição da definição dos tipos de contatos no diretório em Detalhamento dos \ntipos de contato.\nAtualização da versão 02/02/2022\n• Adição dos detalhes sobre o cadastramento de recursos com certificação \nautomática Cadastramento de Recursos Fase 4A.\nALTERAÇÕES DA VERSÃO"
+        },
+        {
+            "pagina": 129,
+            "conteudo": "Classificação da informação: Uso Interno\n"
+        }
+    ]
+}

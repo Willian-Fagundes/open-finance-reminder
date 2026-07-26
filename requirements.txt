@@ -2,3 +2,7 @@ beautifulsoup4
 chromadb
 sentence-transformers
 requests
+pypdf
+pyyaml 
+pandas 
+python-docx

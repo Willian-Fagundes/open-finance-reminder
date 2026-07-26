@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_29.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #29 — 28 de julho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nConforme calendário de versionamento da Fase 1, está prevista uma atualização Patch para as \nAPIs da Fase 1 em 30/07. A atualização contemplará: \n• Retorno dos itens do menu Schemas em ordem alfabética \n• Definição de quantidade máxima de itens para a lista de services em sharedAutomatedTeller-\nMachines \n• Remoção do atributo de e-mail nos Swaggers, deixando apenas a URL para contato do Servi-\nce Desk \n• Atualização da descrição do item AverageMetrics no Swagger, afirmando a unidade do cam-\npo em milissegundos                                                                                   \nEstes ajustes serão disponibilizados nesta sexta-feira (30/07), colocando o portal na versão v1.0.0-\nrc8.1 e as APIs Fase 1 na versão v1.0.2.  \nACESSE AS APIs FASE 1 \nEstão abertos os envios dos pedidos de Certificações Funcionais para instituições financeiras da \nFase 2 para APIs do grupo t0 — Dados cadastrais, resources e consentimento. Cronograma  \ninicialmente previa abertura na sexta-feira (30/07), mas foi antecipado. \nPara mais detalhes de como realizar a submissão dos resultados dos testes, pedimos que sejam \nseguidas as instruções disponibilizadas no GitLab. \nRelembramos que, conforme Instrução Normativa n°98, a certificação é obrigatória para o registro \ndas APIs no Diretório de Participantes. \nCaso a instituição encontre problemas nos testes, sugerimos que seja aberto um chamado no  \nservice desk. \nACESSE O GITLAB ACESSE O SERVICE DESK "
+        }
+    ]
+}

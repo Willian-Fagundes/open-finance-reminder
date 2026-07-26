@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_5.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #5 — 14 de junho de 2021 \nVocê está recebendo este informe pois está cadastrado como administrador da sua instituição financeira no Diretório do \nOPB. Caso não faça mais parte do Open Banking, por gentileza, atualize os dados no Diretório Financeiro. \nFoi identificada uma inconsistência na expressão regular que integra os campos de valores mone-\ntários nos swaggers das APIs Fase 2. Esta inconsistência impacta os testes de conformidade e, \nportanto, precisou ser corrigida.  \nA correção que será disponibilizada nesta segunda-feira (14/06) colocará as APIs Fase 2 na ver-\nsão 1.0.0-rc6.7 e o portal na versão 6.8. Para maiores detalhes, verifique o change log da versão.  \nACESSE AS APIs FASE 2 "
+        }
+    ]
+}

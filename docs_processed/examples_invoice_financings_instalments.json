@@ -1,0 +1,102 @@
+[
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - scheduleInstalments": NaN,
+        "Unnamed: 2": "contractRemainingDays",
+        "Unnamed: 3": "dueInstalments",
+        "Unnamed: 4": "pastDueInstalments",
+        "Unnamed: 5": "currency",
+        "Unnamed: 6": "balloonPayments",
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - scheduleInstalments": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - scheduleInstalments": "contractId",
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": "dueDate",
+        "Unnamed: 7": "amount"
+    },
+    {
+        "Unnamed: 0": 1.0,
+        "invoiceFinancings - scheduleInstalments": "xcjklompowsa279212650822221989319aadrtjk",
+        "Unnamed: 2": "10",
+        "Unnamed: 3": "0",
+        "Unnamed: 4": "0.00'",
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - scheduleInstalments": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": 2.0,
+        "invoiceFinancings - scheduleInstalments": "29533208100122953320866597501618419473449",
+        "Unnamed: 2": "30",
+        "Unnamed: 3": "0",
+        "Unnamed: 4": "0.00'",
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - scheduleInstalments": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": 3.0,
+        "invoiceFinancings - scheduleInstalments": "agbvfdrtj1002230688095370jjkloipq0678433123",
+        "Unnamed: 2": "6",
+        "Unnamed: 3": "0",
+        "Unnamed: 4": "0.00'",
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - scheduleInstalments": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    },
+    {
+        "Unnamed: 0": 4.0,
+        "invoiceFinancings - scheduleInstalments": "asdfghj8125532706944jkloiu8504713juytr5072",
+        "Unnamed: 2": "8",
+        "Unnamed: 3": "0",
+        "Unnamed: 4": "0.00'",
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN
+    }
+]

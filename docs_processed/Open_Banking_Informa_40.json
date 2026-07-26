@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_40.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #40 — 16 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nNeste domingo (15/08), foi disponibilizado o plano de teste para a versão beta do Motor de Confor-\nmidade FAPI e DCR da OpenID Foundation (OIDF), que servirá para certificação de segurança das \nAPIs Fase 3.  \nReforçamos que as instituições que já se certificaram com a OIDF para a Fase 2 não precisarão se \ncertificar para a Fase 3.  \nACESSE A PLATAFORMA DA OIDF \nO GT UX lançou uma nova versão do Guia de Experiência, que adiciona evoluções na jornada, \nalém de ajustes técnicos conforme atualizações deliberadas recentemente. Confira abaixo os prin-\ncipais pontos:  \n• Inclusão de capítulo sobre a solução de Redirecionamento Hybrid Flow with Handoff  para  \nFase 2 e Fase 3; \n• Detalhamento sobre as diferenças entre as formas de iniciação via Pix (inserção manual / \nChave Pix, Pix QR Code); \n• Ajuste dos requisitos e telas para apresentação de informação do recebedor na tela de confir-\nmação da detentora, conforme informações inseridas na iniciadora e regras dos arranjos; \n• Retirada de menções sobre oferta de crédito na Jornada de Iniciação (conforme Resolução \nBCB nº 117); \n• Ajuste da tabela de Status Fase 3 (de acordo com especificações) \nACESSE O GUIA DE EXPERIÊNCIA "
+        }
+    ]
+}

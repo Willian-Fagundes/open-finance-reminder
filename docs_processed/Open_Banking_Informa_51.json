@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_51.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #51 — 06 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nFoi corrigido o seguinte ajuste descritos no Informe #50, de sexta -feira 03/09, do ENUM de subti-\npos de garantia das APIs de Operações de Crédito, que não havia sido atualizado no Portal. As \nAPIs estão atualizadas. \nInformações mais detalhadas se encontram no changelog na Área do Desenvolvedor. \nACESSE AS APIs FASE 2 \nJá está disponível na Área do Desenvolvedor, a versão v1.0.1 -rc1.0 da API Fase 3. A API voltou \npara formato release candidate devido à alteração do calendário da fase 3. \nOs ajustes da nova versão contemplam os seguintes pontos: \n• Adição da funcionalidade de iniciação de pagamento Pix direto pelo recebedor; \n• Inclusão de informações do destino no fluxo de consentimento \nAinda essa semana, a API Fase 3 deve ter novo ajuste para funcionalidade de Pix QR Code, com a \ninclusão do campo para código de município. \nInformações mais detalhadas se encontram no changelog na Área do Desenvolvedor. \nEssas alterações colocam o Portal na versão v1.0.0-rc8.8 \nACESSE A API FASE 3 "
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_3.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #3 Extraordinário — 09 de junho de 2021 \nSerão publicadas, até o final do dia 09/06, na Área do Desenvolvedor, os Guias end-to-end do usu-\nário em duas versões, uma voltada para instituições receptoras de dados e outra para instituições \ntransmissoras. \nEstas documentações visam fornecer às instituições financeiras o passo a passo da implementa-\nção das aplicações do Open Banking, e devem sempre ser consultadas através do menu Seguran-\nça, na Área do Desenvolvedor. \nVocê está recebendo este informe pois está cadastrado como administrador da sua instituição financeira no Diretório do \nOPB. Caso não faça mais parte do Open Banking, por gentileza, atualize os dados no Diretório Financeiro. \nACESSE O MENU SEGURANÇA \nForam necessárias três correções nas APIs Fase 2: \n1. Correção da grafia no retorno da API Accounts (endpoint GET /accounts). O parâmetro \n“accountID” foi corrigido para “accountId”, incluindo o pattern correspondente. \n2. Correção do retorno da API Credit-cards-accounts (endpoint GET /accounts/\n{creditCardAccountId}). O campo paymentMethod foi alterado para uma lista (array). \n3. Correção do consentId. O pattern e o tamanho do campo consentId foram revisados para \ncontemplar a obrigatoriedade do uso do namespace. \nApós publicação até o final do dia 09/06, as APIs Fase 2 estarão na versão v1.0.0-rc6.6 conforme \nlink abaixo. \nCONSULTE AS APIs FASE 2  "
+        }
+    ]
+}

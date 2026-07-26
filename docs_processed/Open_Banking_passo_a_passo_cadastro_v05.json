@@ -1,0 +1,145 @@
+{
+    "arquivo_origem": "Open_Banking_passo_a_passo_cadastro_v05.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": "Passo a passo de cadastro no diretório\n"
+        },
+        {
+            "pagina": 2,
+            "conteudo": "15/01/21\nREGISTRO \nNO \nDIRETÓRIO\nCronograma da implementação\nProdutos e serviços padronizados, \nfacilitando a busca de \ninformações públicas\nLiberdade do cliente para \ncompartilhar seus dados com \noutras instituições participantes \ndo Open Banking\nFlexibilidade para iniciar \npagamentos e propostas de \ncrédito em canais adicionais\nAmpliação dos dados \ncompartilhados, aumentando as \npossibilidades no envio dos dados \ncom outras instituições"
+        },
+        {
+            "pagina": 3,
+            "conteudo": "Já enviou os dados do iniciador \nde cadastro?\ncadastro@openbankingbr.org\n"
+        },
+        {
+            "pagina": 4,
+            "conteudo": "Acesse o diretório\ne clique em \"Registro\"\nhttps://web.directory.openbankingbrasil.org.brh"
+        },
+        {
+            "pagina": 5,
+            "conteudo": "Preencha suas \ninformações e lembre-\nse de usar seu e-mail \ncorporativo\n*Senha deve ter entre 8 e 24 \ncaracteres com letras maiúsculas, \nminúsculas, números e ao menos um \ncarácter especial\n**Lembre-se de selecionar a opção \ncaso você possua e-CPF"
+        },
+        {
+            "pagina": 6,
+            "conteudo": "Para verificar a sua \nconta, você receberá \numa senha de uso \núnico (OTP) no número \nde celular e no e-mail \nque você forneceu no \npasso anterior \n*Caso não tenha recebido o código, \nclique em \"Reenviar OTP\"\nENDEREÇO DE E-MAIL\nTELEFONE"
+        },
+        {
+            "pagina": 7,
+            "conteudo": "Você vai receber um \ne-mail com o título \n\"Verificação\nda sua conta no \ndiretório do Open \nBanking Brasil\"\nCopie e cole o código\n *Caso não tenha recebido o código, cheque sua caixa \nde SPAM e as regras de bloqueio. Às vezes, o \nprocesso de envio pode demorar um pouco, mas se o \nproblema persistir clique em \"Reenviar OTP\""
+        },
+        {
+            "pagina": 8,
+            "conteudo": "Você também vai \nreceber um código \npor SMS no telefone \ncelular que você nos \nforneceu \"Verificação\nda sua conta no \ndiretório do Open \nBanking Brasil\"\nCopie e cole o código *Caso não tenha recebido o código por SMS, clique \nem \"Reenviar OTP\" - porém lembre-se que você \ntambém terá um novo código no seu e-mail"
+        },
+        {
+            "pagina": 9,
+            "conteudo": "*Google Authenticator, Microsoft Authenticator, \nLastPass Authenticator, 1Password, entre outros\nVocê vai precisar fazer \numa autenticação de dois \nfatores:\nbaixe o aplicativo de \nautenticação de sua \npreferência*, digitalize o \nQR code que aparece na \npágina e forneça a senha \nde uso único\n"
+        },
+        {
+            "pagina": 10,
+            "conteudo": "Precisamos que você \nassine o Termo de Aceite \ncom as suas informações \npessoais. Vamos te enviar \nesse documento via \nDocuSign. Para acessá-lo, \ncopie o código daqui\n"
+        },
+        {
+            "pagina": 11,
+            "conteudo": "No seu e-mail cadastrado, \nvocê receberá uma \nmensagem do remetente \ndse@eumail.docusign.net\nClique em “REVISAR \nDOCUMENTO\"\n"
+        },
+        {
+            "pagina": 12,
+            "conteudo": "Cole o código de acesso \nna tela de validação do \nDocuSign e clique em \n“VALIDAR”\n"
+        },
+        {
+            "pagina": 13,
+            "conteudo": "Aqui você terá os \ndetalhes do Termo de \nAceite.\nRevise os dados e assine \no documento\n"
+        },
+        {
+            "pagina": 14,
+            "conteudo": "Se você optou por usar\no e-CPF também para \nassinar o documento de \naceite, o e-CPF será \nsolicitado pelo Docusign\n"
+        },
+        {
+            "pagina": 15,
+            "conteudo": "O selo de assinatura \ndo e-CPF vai estar \ninseridos no Termo de \nAceite que foi \nassinado\n"
+        },
+        {
+            "pagina": 16,
+            "conteudo": "Após assinar o Termo de \nAceite, retorne à página de \nacesso ao Diretório e \nclique em \"Verificar status\"\nSe tudo estiver ok, você \nserá automaticamente \nredirecionado à página\ninicial do Diretório\n"
+        },
+        {
+            "pagina": 17,
+            "conteudo": "Agora que você tem \nacesso ao Diretório do \nOpen Banking Brasil,\né necessário fazer\no cadastro dos \nrepresentantes da sua \norganização\n*Lembrando que o prazo estabelecido pelo Banco Central \ndo Brasil para realizar esse cadastro é 15/01/2021 \n"
+        },
+        {
+            "pagina": 18,
+            "conteudo": "Na barra lateral \nesquerda, clique em \n\"Organizações\" e \nselecione a(s) sua(s) \ninstituição(s) para \nprosseguir com o \ncadastro\n"
+        },
+        {
+            "pagina": 19,
+            "conteudo": "Aqui todas as informações da sua instituição já \nestarão preenchidas. Comece revisando as \ninformações de negócios\n"
+        },
+        {
+            "pagina": 20,
+            "conteudo": "Em seguida, verifique se os detalhes legais\nda sua instituição estão corretos\n"
+        },
+        {
+            "pagina": 21,
+            "conteudo": "Depois de validar os Detalhes da Organização, \nclique em \"Novo contato\", no canto direito\n"
+        },
+        {
+            "pagina": 22,
+            "conteudo": "Contatos que o iniciador \nde cadastro precisa \nadicionar:\n● Representantes técnicos\ne de negócios\n● Representantes de cobrança\n● Representante para incidentes\n● Representante para segurança\n"
+        },
+        {
+            "pagina": 23,
+            "conteudo": "Em \"Reivindicações de domínio de autoridade\" \nvocê precisa apenas selecionar as opções já \ndisponíveis para preencher os campos em aberto.\nNão é necessário incluir o campo \"ID de registro\"\n"
+        },
+        {
+            "pagina": 24,
+            "conteudo": "Em \"Reivindicações de autoridade\" você precisa \nadicionar as funções que serão desempenhadas\npela sua instituição dentro do Open Banking\n"
+        },
+        {
+            "pagina": 25,
+            "conteudo": "[ISPB números]-OBB-\n[FUNÇÃO]\n(CONTA, DADOS, CCORR ou PAGTO)\nSUBSTITUA o [ISPB] pelo primeiros 8 \ndígitos do seu CNPJ e o [FUNÇÃO] pela \nsigla da função que você está inserindo\nEx: 12345678-OBB-CONTA\nxxxxxxxx-OBB-CONTA"
+        },
+        {
+            "pagina": 26,
+            "conteudo": "Aqui estarão os dados do iniciador de cadastro que \nvocê enviou via planilha por e-mail para \ncadastro@openbankingbr.org\n"
+        },
+        {
+            "pagina": 27,
+            "conteudo": "Você pode também adicionar novos administradores \nneste espaço - basta incluir o e-mail deles\n"
+        },
+        {
+            "pagina": 28,
+            "conteudo": "Para assinar o \"Termo\nde Adesão\", informe o \nnúmero de signatários. \nEm seguida, você \nreceberá por e-mail um \ndocumento via DocuSign\n"
+        },
+        {
+            "pagina": 29,
+            "conteudo": "O código a ser inserido no \nDocuSign estará \ndisponível em “História \nTnC”\nE-mail do iniciador XXXXXX"
+        },
+        {
+            "pagina": 30,
+            "conteudo": "Ao abrir o documento do \nDocuSign, você deverá \nindicar os representantes \nlegais da organização.\nOs representantes \nreceberão os e-mails do \nDocuSign para coletar as \nassinaturas e os \ndocumentos \ncomprobatórios.\n"
+        },
+        {
+            "pagina": 31,
+            "conteudo": ""
+        },
+        {
+            "pagina": 32,
+            "conteudo": ""
+        },
+        {
+            "pagina": 33,
+            "conteudo": ""
+        },
+        {
+            "pagina": 34,
+            "conteudo": "Ficou com alguma dúvida?\nMande um e-mail para \ncadastro@openbankingbr.org\n"
+        },
+        {
+            "pagina": 35,
+            "conteudo": ""
+        }
+    ]
+}

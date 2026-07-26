@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_12.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #12 — 28 de junho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nA partir de hoje, dia 28/06, estará aberto o envio do pedido de certificação dos testes de segurança \nFAPI: BR-OP e FAPI: BR DCR para as instituições que irão entrar no go -live da Fase 2, no dia \n15/07.  \nConforme acordado no workshop do dia 22/06, o teste poderá ser realizado tanto com a API resou-\nrces (scope: openid resources) quanto a API accounts (scope: openid accounts).  \nMais detalhes sobre o acesso aos testes e o processo de certificação poderão ser consultados no \nrecém publicado guia de conformidade funcional, na aba Certificação de Conformidade. \nACESSE A ABA CERTIFICAÇÃO DE CONFORMIDADE "
+        }
+    ]
+}

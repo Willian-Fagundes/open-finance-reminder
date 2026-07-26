@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_55.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \n \nConfira as últimas atualizações da Estrutura de Governança \nInforme #55 — 13 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nInformamos que o início da certificação funcional para APIs do Grupo T2 não ocorrerá hoje (13/09), \nconforme previsto em cronograma. Devido ao baixo número de instituições passando nos testes de \nconformidade das APIs do ciclo T2, o motor de conformidade ainda não pode ser considerado vali-\ndado e pronto para abertura de certificações. Portanto, solicitamos às instituições participantes da \nFase 2 que continuem executando  os testes das APIs T2 - Credit card, Loans, Financings, Dis-\ncounted credit rights e Unarranged overdraft. \nInformamos ainda que no momento em que houver testes suficientes para validação do motor \n(Retirada do WIP do plano de teste das APIs T2 do motor conformidade), enviaremos novo comuni-\ncado confirmando a abertura das certificações. \n"
+        }
+    ]
+}

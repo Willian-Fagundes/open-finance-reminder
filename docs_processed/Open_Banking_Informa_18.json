@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_18.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #18 — 09 de julho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nAs versões que foram publicadas desde a sexta-feira passada (02/07) e comunicadas por meio dos \nInformes #15 e #17 deverão ser revertidas no início da próxima semana. Dessa forma: \n• A versão 7.4 deve ser desconsiderada integralmente \n• A versão 7.3 deve ser parcialmente considerada – estão MANTIDAS as alterações realiza-\ndas quanto às correções da expressão regular de múltiplos campos e o versionamento \ndas APIs, as demais devem ser desconsideradas \n• A versão 7.2 deve ser parcialmente considerada – estão MANTIDAS as alterações realiza-\ndas EXCETO aquelas relativas aos campos com inclusão do atributo nullable:true \nA reversão será realizada no início da próxima semana e a versão do portal será alterada. Para \nmaiores detalhes, verifique o change log na Área do Desenvolvedor. \nRatificamos a orientação de priorizar as especificações que constam nos Swaggers das APIs.  \nEstamos trabalhando para equalizar toda a documentação que está disponível na Área do Desen-\nvolvedor, porém, com o objetivo de disponibilizar as atualizações aos participantes com celeridade, \ntemos priorizado o Swagger frente aos demais documentos. \n"
+        }
+    ]
+}

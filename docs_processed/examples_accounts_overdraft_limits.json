@@ -1,0 +1,50 @@
+[
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": "balances",
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "Exemplo",
+        "data": "overdraftLimit",
+        "Unnamed: 2": "type",
+        "Unnamed: 3": "amount "
+    },
+    {
+        "Unnamed: 0": "1",
+        "data": "FAIXA_1",
+        "Unnamed: 2": "VALOR_UTILIZADO_LIMITE",
+        "Unnamed: 3": "500.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": "SALDO_DESCOBERTO",
+        "Unnamed: 3": "52.88"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "2",
+        "data": "FAIXA_2",
+        "Unnamed: 2": "VALOR_UTILIZADO_LIMITE",
+        "Unnamed: 3": "1000.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "6",
+        "data": NaN,
+        "Unnamed: 2": "SALDO_DESCOBERTO",
+        "Unnamed: 3": "93.00"
+    }
+]

@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_42.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #42 — 18 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nOs seguintes ajustes foram realizados na API da Fase 3, contemplando assinatura de mensagens \npara o status code 422: \n• Alteração do content type do objeto de retorno de application/json para application/jwt em Un-\nprocessableEntityConsents; \n• Alteração do content type do objeto de retorno de application/json para application/jwt em Un-\nprocessableEntityPixPayments. \nEstes ajustes foram disponibilizados nesta quarta-feira (18/08). Com esta atualização, a API Fase 3 \npassa para sua primeira versão oficial, v1.0.0. \nPara mais detalhes, verifique o changelog na Área do Desenvolvedor. \nACESSE A API FASE 3 "
+        }
+    ]
+}

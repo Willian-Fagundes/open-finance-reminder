@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_52.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #52 — 08 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nLembramos às instituições participantes da Fase 2 do Open Banking Brasil que, na próxima segun-\nda-feira 13/set, ocorrerá o go live da etapa T1, conforme cronograma de lançamento escalonado da \nFase 2. \nReforçamos que continuam abertos os pedidos de Certificação Funcional no motor de conformida-\nde do Open Banking Brasil para API do Grupo T1 (Accounts) - conforme Instrução Normativa  \nn°133, a obtenção da certificação funcional é obrigatória para registro das APIs no Diretório de Par-\nticipantes e entrada em produção. \nPara mais detalhes de como realizar a submissão dos resultados dos testes, pedimos que sejam \nseguidas as instruções disponibilizadas no GitLab. Caso a instituição encontre problemas nos tes-\ntes, orientamos que seja aberto um chamado no service desk. \nACESSE O GITLAB ACESSE O SERVICE DESK "
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_23.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #23 — 16 de julho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nJá está disponível, na Área do Desenvolvedor, a versão 1.0.3 das APIs da Fase 2. Foi ajustado o \nseguinte ponto da API Consents: \n• Alteração no description da API relativo as permissions - Permissions deverão ser tratadas confor-\nme seus agrupamentos de dados pelos transmissores.  \nAinda no escopo da versão 1.0.3, para a próxima segunda -feira (19/07), estão previstas alterações \nreferentes a API de customers. Neste caso, três campos terão o parâmetro Nullable: True incluí-\ndos. \nInformações mais detalhadas se encontram no changelog na Área do Desenvolvedor. \nACESSE AS APIs FASE 2 "
+        }
+    ]
+}

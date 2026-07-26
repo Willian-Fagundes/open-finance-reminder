@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_31.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #31 — 02 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nUma nova seção da Área do Desenvolvedor do Portal foi criada, dedicada às definições para o lan-\nçamento escalonado da Fase 2. Essas definições incluem códigos retorno HTTP status code para \npedidos fora da janela de funcionamento e limite de consentimento, mensagem padronizada ao  \ncliente e definições de base de clientes. \n \nA seção pode ser consultada através do botão abaixo. \nACESSE A SEÇÃO NA ÁREA DO DESENVOLVEDOR \nNesta segunda-feira (02/08), foi disponibilizado o plano de teste para a versão beta do Motor de \nConformidade FAPI e DCR da OpenID Foundation (OIDF), que servirá para certificação de  \nsegurança das APIs Fase 3.  \n \nReforçamos que as instituições que já se certificaram com a OIDF para a Fase 2 não precisarão se \ncertificar para a Fase 3. \nACESSE A PLATAFORMA DA OIDF "
+        }
+    ]
+}

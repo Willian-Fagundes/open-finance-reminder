@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_43.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #43 — 20 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nInformamos que o formato do campo  tls_client_auth_subject_dn dos certificados de cliente deve \nser o “nome curto”, conforme padrão DCR Brasil e em conformidade com a RFC 4514  e com o do-\ncumento Padrão de Certificados Open Banking Brasil (vide exemplos abaixo).   \nAs instituições receptoras e as transmissoras que optaram pelo uso de  tls_client_auth (FAPI 1.0 \nparte 2 - advanced, seção 5.2.2,  item 14), com suporte apenas a “nome longo”, precisam realizar \nas adequações para suportar o “nome curto” o quanto antes, pois instituições que não tiverem im-\nplementado desta forma correm risco de não conseguirem se comunicar com as demais institui-\nções.  \n   \nSeguem abaixo exemplos de DN usando “nome curto” para certificados utilizados no Open Banking \nBrasil:  \nEm resposta a questionamentos anteriores de algumas instituições, esclarecemos que, conforme \nespecificado no item 14 da seção 5.2.2 do FAPI 1.0 parte 2 ( advanced), cabe à detentora de con-\nta decidir se  deseja implementar  tls_client_auth ou private_key_jwt, com ou sem PAR \n(pushed authorisation request).  \nCabe ao iniciador decidir qual método ele irá utilizar em detrimento  ao parceiro com o qual irá se \ncomunicar.  \nOs métodos suportados por cada instituição estão publicados em seus respectivos documentos \nde well-known e também publicados no site da OpenID Foundation, na área de certificados no pa-\ndrão FAPI Brasil \nSITE DE CERTIFICADOS PADRÃO FAPI \n"
+        }
+    ]
+}

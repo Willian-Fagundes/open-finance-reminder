@@ -1,0 +1,9 @@
+{
+    "arquivo_origem": "Open_Banking_Informa_61.pdf",
+    "pages": [
+        {
+            "pagina": 1,
+            "conteudo": " \n \nConfira as últimas atualizações da Estrutura de Governança \nInforme #61 — 24 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nFoi detectada uma incoerência entre o exemplo na área de desenvolvedor do padrão dos links e o \nswagger desta mesma especificação. \n \nRelembramos que o recomendado é que as instituições consultem diretamente o swagger das es-\npecificações para parametrizar seus desenvolvimentos. \n \nAdicionalmente, informamos que o motor de conformidade funcional apresenta testes já corrigindo \nestes gaps entre especificação, exemplos e swagger. \n \nDessa forma, as instituições devem seguir o seguinte para ajustar suas especificações, no que tan-\nge ao padrão dos links: \n• Os campos self, first, last, prev e next não podem ser null. Se não houver o link, o atributo \nsimplesmente não deve ser enviado; \n• Há uma validação em cima da presença dos atributos. Por exemplo, o envio de 'next' quando \nse está na última página (self = totalPages) não deve ocorrer e está sendo validado; \n• Qualquer link enviado nestes atributos devem estar com o link https, e não http; \n• O valor do campo totalPages tem que ser mínimo 1 \n \nPara consultar todas validações, acesse o Gitlab do motor. \nACESSE O GITLAB "
+        }
+    ]
+}
