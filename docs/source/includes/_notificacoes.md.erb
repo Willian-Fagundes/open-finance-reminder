@@ -1,0 +1,112 @@
+# Notificações
+
+<%= partial "./includes/_informes" %>
+
+## Workshops com OpenID Foundation
+Publicado em 26 de maio de 2021
+
+A OpenID Foundation promoveu dois workshops para os participantes do Open Banking Brasil sobre o perfil de segurança FAPI e o conjunto de testes de conformidade e certificação FAPI.
+
+Os workshops tiveram 5 objetivos principais:
+
+* Atualizar os participantes dos últimos desenvolvimentos no perfil OIDF Financial-Grade API (FAPI) e nos requisitos brasileiros;
+
+* Demonstrar as respectivas ferramentas de conformidade e os benefícios da certificação;
+
+* Oferecer aos participantes apoio no uso dessas ferramentas;
+
+* Incentivar um maior número de certificações;
+
+* Ajudar a expandir o ecossistema de Open Banking, aumentando a segurança e os benefícios para os participantes e clientes finais.
+
+No dia 17 de maio de 2021 foi realizado o primeiro workshop, que consistiu em uma introdução à OpenID Foundation, padrões OpenID incluindo FAPI e o programa de certificação OpenID. A gravação do workshop pode ser acessada pelo <a target="_blank" href="https://www.youtube.com/watch?v=v8ks7C-f9Yg">link</a>
+
+No dia 24 de maio de 2021 foi realizado o segundo workshop, que possuiu um aprofundamento mais técnico. Neste workshop, foi abordado o detalhamento das características do FAPI, incluindo o FAPI 2.0, e uma demonstração abrangente do pacote de conformidade FAPI, incluindo uma demonstração ao vivo de uma implementação FAPI. A gravação do workshop pode ser acessada pelo <a target="_blank" href="https://www.youtube.com/watch?v=pn51tKgLIoQ">link</a>
+
+## Atualização das APIs no diretório
+Publicado em 14 de abril de 2021
+
+Seguindo determinação do Banco Central do Brasil, todas as instituições financeiras vinculadas à Fase 1 do Open Banking deverão especificar todas as ramificações (endpoints) de suas famílias de APIs no diretório de <a target="_blank" href="https://web.directory.openbankingbrasil.org.br/">participantes do Open Banking</a>. Essa atualização deverá ser feita em até 15 dias a partir da data de envio deste documento.
+
+Na prática, as instituições deverão excluir a entrada que já existe no diretório de participantes e incluir cada uma das ramificações que entenda serem válidas para o seu próprio caso.
+
+Tratam-se de 4 famílias de APIs, com até 20 ramificações no total. Essa atualização proporcionará mais transparência ao consumidor, que terá mais facilidade para localizar as informações das instituições. A ação também evitará distorções nas métricas de disponibilidade de interfaces, já que as instituições não deverão cadastrar endpoints relativos a dependências ou a produtos e serviços que não tenham, não ofertem ou não distribuam.
+
+Dessa maneira, a mensagem de erro 404 não será mais exibida nestes casos. Até o dia 16 de abril de 2021, uma <a target="_blank" href="https://ob-public-files.s3.amazonaws.com/faq_atualizacao_diretorio_v3.pdf?cookie=true">FAQ com as principais dúvidas</a> será disponibilizada, assim como um <a target="_blank" href="https://ob-public-files.s3.amazonaws.com/open_banking_endpoints.pdf?cookie=true">manual com passo a passo</a> para a atualização das APIs.
+
+São Paulo, 14 de abril de 2021
+
+Grupo de Trabalho de Infraestrutura do Open Banking Brasil
+
+## Como realizar a publicação das APIs da Fase 1 do Open Banking
+Publicado em 14 de abril de 2021
+
+Para a primeira fase do Open Banking Brasil, conhecida como Open Data, as instituições registradas no ecossistema com o papel “instituição transmissora e receptora de dados” deverão realizar a publicação das suas APIs no diretório de participantes.
+
+O papel “instituição transmissora e receptora de dados”, abreviada por DADOS no diretório de participantes, é destinado a todas as instituições dos agrupamentos S1 e S2, em caráter obrigatório, e a qualquer outra instituição regulada pelo Banco Central do Brasil, em caráter voluntário.
+
+Para publicar as APIs da fase 1 descritas no <a target="_blank" href="https://openbanking-brasil.github.io/areadesenvolvedor/#fase-1-apis-do-open-banking-brasil">Portal do Desenvolvedor do Open Banking</a> o administrador da instituição no diretório de participantes com papel “DADOS” deve seguir as instruções contidas no <a target="_blank" href="https://openbanking-brasil.github.io/areadesenvolvedor/#guias-de-implementacao">Guia do diretório</a>.
+
+Caso a publicação tenha sido realizada de forma correta os endpoints das APIs poderão ser consultados através do JSON retornado pela API de participantes do diretório: https://data.directory.openbankingbrasil.org.br/participants. O acesso a essa API é livre e seu conteúdo é atualizado a cada 15 minutos.
+
+Qualquer dúvida em relação ao processo de cadastro deverá ser enviado ao <a target="_blank" href="https://servicedesk.openbankingbrasil.org.br/Login.jsp?navLanguage=pt-BR">service desk do Open Banking</a>.
+
+Materiais adicionais:
+
+<a target="_blank" href="https://openbankingbrasil.org.br/2021/05/03/atualizacao-das-apis-no-diretorio/?cookie=true">Comunicado atualização do diretório</a>
+
+<a target="_blank" href="https://ob-public-files.s3.amazonaws.com/faq_atualizacao_diretorio_v3.pdf?cookie=true">FAQ Diretório atualizado</a>
+
+<a target="_blank" href="https://ob-public-files.s3.amazonaws.com/open_banking_endpoints.pdf?cookie=true">Cadastro endpoints</a>
+
+<%= partial "./includes/_guia_experiencia_compartilhamento_de_dados" %>
+
+<%= partial "./includes/_guia_prevencao_fraudes" %>
+
+## Definições para o Lançamento Escalonado da fase 2
+
+### Retorno para pedidos fora da janela de funcionamento
+Chamadas às interfaces de compartilhamento de dados, fora dos horários estipulados de cada ciclo, conforme IN 136, deve retornar *HTTP Status Code* 425.
+
+### Clientes para o cálculo do número de consentimentos
+O cálculo porcentual seria feito sobre o total de clientes (considerando pessoas naturais e jurídicas), seguindo a mesma regra do envio da base de clientes ao BCB.
+
+### Base de clientes elegíveis
+Para o cálculo do percentual de clientes elegíveis em cada ciclo do lançamento escalonado, a instituição participante deve considerar a base total de clientes, a qual já é comunicado mensalmente ao Banco Central.
+
+Deve ser considerada a última data disponível de referência para o levantamento do número total de clientes, com base nos números comunicados ao BCB. (Utilizar 30/05 como base para cálculo dos percentuais de todos os 4 ciclos do lançamento escalonado da Fase 2).
+
+### Código de retorno para pedidos de consentimento para a transmissora que já atingiu o limite de consentimentos
+Caso a transmissora já tenha atingido o limite de consentimentos permitidos no ciclo, a solicitação do consentimento deve retornar erro *HTTP Status Code* 429.
+
+### Devolução de mensagem padronizada
+Quando a receptora receber o erro da transmissora, de que o limite de consentimentos do ciclo foi atingido, deve ser exibida ao cliente uma mensagem padronizada:
+
+*No momento, a instituição de origem dos dados não poderá atender esta solicitação, pois atingiu os limites de compartilhamentos estabelecidos. O Open Banking está sendo disponibilizado gradualmente para garantir um sistema seguro e estável.
+(Recomendação para que a Instituição Receptora sugira o que fazer, ex.: call to action)*
+
+## Definições para o Lançamento Escalonado da fase 3
+
+### Mensagens de erro para escalonamento da Fase 3
+Estão disponíveis as orientações da Estrutura para comunicação com os usuários que passarem por algum erro na jornada, que seja ocasionado pelas definições de escalonamento da Fase 3. Mais especificamente, erros motivados por extrapolar limite de valor, limite de horário e/ou limite de público. A iniciadora deve garantir que o usuário seja impedido de iniciar um pagamento que extrapola as restrições impostas.
+
+### Orientações quanto a restrição de iniciação em função do dispositivo do usuário.
+
+A iniciadora de pagamentos em função do período de escalonamento poderá restringir o acesso a determinados dispositivos (Celular ou desktop) e jornadas em múltiplos devices, conforme determinações estabelecidas pelo regulador.
+    
+Em ambos os casos, a iniciadora deverá avisar o cliente antes da jornada de redirecionamento seguindo as diretrizes de UX do Open Banking Brasil.
+
+
+| Código de erro                            | Mensagem de erro                                                                                                                                                                                                                                                                                                 |
+|:------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Response Code 422: limite de valor        | O valor do pagamento ultrapassa o limite de R$ 1.000,00 estabelecido nesta fase inicial. O Open Banking está sendo disponibilizado gradualmente para garantir um sistema seguro e estável.                                                                                                                       |
+|                                           | OBS.: Proposta a respeito das especificações devido à limitações do escalonamento:                                                                                                                                                                                                                               |
+|                                           | Em caso de extrapolação dos limites impostos para o lançamento escalonado, o consentimento não deve ser criado e a detentora deve retornar o seguinte de acordo com o caso:                                                                                                                                      |
+|                                           | Limites operacionais (valor da transação): atributo DETALHE_PGTO_INVALIDO)                                                                                                                                                                                                                                       |
+|                                           | Limites operacionais (funcionalidade): atributo FORMA_PGTO_INVALIDA)                                                                                                                                                                                                                                             |
+|                                           | (Recomendação para que a Instituição Iniciadora sugira o que fazer, ex.: call to action)                                                                                                                                                                                                                         | 
+| Responde Code 425: limite de horário      | Esta solicitação não poderá ser atendida pois está fora do horário de funcionamento estabelecido nesta fase inicial (recomendação para que a Instituição Iniciadora apresente a grade de horários, se quiser). O Open Banking está sendo disponibilizado gradualmente para garantir um sistema seguro e estável. | 
+|                                           | OBS.: O horário de funcionamento definido no normativo se refere à disponibilidade do endpoint POST do consentimento. Demais endpoints deverão ficar disponíveis por mais 1 hora.                                                                                                                                 |         
+|                                           | (Recomendação para que a Instituição Iniciadora sugira o que fazer, ex.: call to action)                                                                                                                                                                                                                         | 
+| Response Code 429: limite de público      | No momento, a instituição detentora da conta não poderá atender esta solicitação, pois atingiu os limites de transações estabelecidos. O Open Banking está sendo disponibilizado gradualmente para garantir um sistema seguro e estável.                                                                         |                   
+|                                           | (Recomendação para que a Instituição Iniciadora sugira o que fazer, ex.: call to action)                                                                                                                                                                                                                         | 
