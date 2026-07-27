@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_34.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #34 — 07 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nInformamos que foi incluída uma seção de “Considerações sobre assinatura do conteúdo de men-\nsagens (JWS)” na documentação do Perfil de Segurança, disponível na Área do Desenvolvedor.  \n \nEsta seção adicionada especifica requisitos para assinatura e validação de mensagens assinadas \nde acordo com o padrão JWS e tem por objetivo garantir a integridade e o não -repúdio das infor-\nmações tramitadas em APIs sensíveis. \n \nAlterações nas especificações das APIs da Fase 3 serão anunciadas em breve para refletir estes \najustes. \nACESSE A DOCUMENTAÇÃO DO PERFIL DE SEGURANÇA  "
-        }
-    ]
-}

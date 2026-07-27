@@ -1,0 +1,93 @@
+[
+    {
+        "Unnamed: 0": "Exemplo",
+        "Unnamed: 1": "brandName",
+        "Unnamed: 2": "companyCnpj",
+        "data": "creditcardAccountId",
+        "Unnamed: 4": "requestDateTime",
+        "Unnamed: 5": "name",
+        "Unnamed: 6": "productType",
+        "Unnamed: 7": "productAdditionalInfo",
+        "Unnamed: 8": "creditCardNetwork",
+        "Unnamed: 9": "network\nAdditionalInfo",
+        "Unnamed: 10": "creditcardAccountId"
+    },
+    {
+        "Unnamed: 0": "1",
+        "Unnamed: 1": " 'Organização A'",
+        "Unnamed: 2": "21128159000166'",
+        "data": "XXZTR3459087",
+        "Unnamed: 4": "2020-07-21T08:30:00Z'",
+        "Unnamed: 5": "Cartão Universitário'",
+        "Unnamed: 6": "CLASSIC_NACIONAL",
+        "Unnamed: 7": NaN,
+        "Unnamed: 8": "VISA",
+        "Unnamed: 9": NaN,
+        "Unnamed: 10": "XXZTR3459087"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "Unnamed: 1": NaN,
+        "Unnamed: 2": NaN,
+        "data": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN,
+        "Unnamed: 8": NaN,
+        "Unnamed: 9": NaN,
+        "Unnamed: 10": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "Unnamed: 1": " 'Organização A'",
+        "Unnamed: 2": "21128159000166'",
+        "data": "ASBCR22987345933",
+        "Unnamed: 4": "2020-07-21T08:30:00Z'",
+        "Unnamed: 5": "Cartão Vantagens'",
+        "Unnamed: 6": "OUTROS",
+        "Unnamed: 7": "OURO_INTERNACIONAL",
+        "Unnamed: 8": "VISA",
+        "Unnamed: 9": NaN,
+        "Unnamed: 10": "ASBCR22987345933"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "Unnamed: 1": NaN,
+        "Unnamed: 2": NaN,
+        "data": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN,
+        "Unnamed: 8": NaN,
+        "Unnamed: 9": NaN,
+        "Unnamed: 10": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "Unnamed: 1": " 'Organização A'",
+        "Unnamed: 2": "21128159000166'",
+        "data": "TTDF9873459229",
+        "Unnamed: 4": "2020-07-21T08:30:00Z'",
+        "Unnamed: 5": "Cartão Fit'",
+        "Unnamed: 6": "GOLD",
+        "Unnamed: 7": NaN,
+        "Unnamed: 8": "MASTERCARD ",
+        "Unnamed: 9": NaN,
+        "Unnamed: 10": "TTDF9873459229"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "Unnamed: 1": NaN,
+        "Unnamed: 2": NaN,
+        "data": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN,
+        "Unnamed: 7": NaN,
+        "Unnamed: 8": NaN,
+        "Unnamed: 9": NaN,
+        "Unnamed: 10": NaN
+    }
+]

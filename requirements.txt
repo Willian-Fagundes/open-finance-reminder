@@ -6,3 +6,8 @@ pypdf
 pyyaml 
 pandas 
 python-docx
+langchain
+langchain-huggingface
+langchain-text-splitters
+langchain-chroma
+chromadb

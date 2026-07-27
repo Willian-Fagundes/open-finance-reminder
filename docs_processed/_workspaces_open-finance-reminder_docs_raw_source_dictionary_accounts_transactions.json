@@ -1,0 +1,140 @@
+[
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "GET /accounts/{accountId}/transactions,,\"Método para obter as transações da conta de depósito à vista, poupança ou pagamento pré-paga identificada por accountId mantida pelo cliente na instituição transmissora\",,,,,,,,,,"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/,,\"Lista dos lançamentos referentes às transações realizadas e de lançamentos futuros para as contas de: depósito à vista, poupança e de pagamento pré-paga\",Lista,,Obrigatório,,,1,N,Preenchimento obrigatório se informado valor do saldo,,Lista"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/transactionId,transactionId,Código ou identificador único prestado pela instituição que mantém a conta para representar a transação individual.,Texto,100,Opcional,\\w*\\W*,,0,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/completedAuthorisedPaymentType,completedAuthorisedPaymentType,\"Indicador da transação: "
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "- Transação efetivada"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "- Lançamento futuro\",Texto,19,Obrigatório,,\"TRANSACAO_EFETIVADA"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "LANCAMENTO_FUTURO\",1,1,Não há restrição,,ENUM"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/creditDebitType,creditDebitType,\"Indicador do tipo de lançamento: "
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "- Crédito"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "- Débito"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "Em um extrato bancário, os créditos, marcados com a letra “C” ao lado do valor registrado, informam as entradas de dinheiro na conta-corrente."
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "Débito (no extrato) Em um extrato bancário, os débitos, marcados com a letra “D” ao lado do valor registrado, informam as saídas de dinheiro na conta-corrente. \",Texto,7,Obrigatório,,\"CREDITO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "DEBITO\",1,1,Não há restrição,,ENUM"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/transactionName,transactionName,Campo livre que corresponde ao identificador da transação na instituição financeira,Texto,60,Obrigatório,\\w*\\W*,,1,1,,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/type,type,Tipo de Transação,Texto,31,Obrigatório,,\"TED"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "DOC"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "PIX"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "TRANSFERENCIA_MESMA_INSTITUICAO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "BOLETO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "CONVENIO_ARRECADACAO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "PACOTE_TARIFA_SERVICOS"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "TARIFA_SERVICOS_AVULSOS"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "FOLHA_PAGAMENTO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "DEPOSITO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "SAQUE"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "CARTAO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "ENCARGOS_JUROS_CHEQUE_ESPECIAL"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "RENDIMENTO_APLIC_FINANCEIRA "
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "PORTABILIDADE_SALARIO"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "RESGATE_APLIC_FINANCEIRA"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "OPERACAO_CREDITO "
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "OUTROS\",1,1,,,ENUM"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/amount,amount,Valor da transação. Expressa em valor monetário com 4 casas decimais.,Número,19,Obrigatório,,,1,1,Não aceita valor negativo,,Double"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/transactionCurrency,transactionCurrency,\"Moeda referente ao valor da transação, segundo modelo ISO-4217. p.ex. 'BRL'.\",Texto,3,Obrigatório,^(\\w{3}){1}$,,1,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/transactionDate,transactionDate,\"Se indicador de transação:"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "TRANSACAO_EFETIVADA - corresponde a data de lançamento da transação"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "LANÇAMENTO_FUTURO - corresponde a data prevista de efetivação da transação\",Data,10,Obrigatório,^(\\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$,,1,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/partieCnpjCpf,partieCnpjCpf,\"Identificação da pessoa envolvida na transação: pagador ou recebedor (Preencher com o CPF ou CNPJ, sem formatação)\",Texto,14,Obrigatório,^\\d{11}$|^\\d{14}$|^NA$,,1,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/partiePersonType,partiePersonType,\"Identificação do Tipo de Pessoa da pessoa envolvida na transação. Vide Enum"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "Pessoa Natural - Informar CPF no campo “payerCnpjCpf”"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "Pessoa Jurídica - Informar CNPJ no campo “payerCnpjCpf”\",Texto,14,Obrigatório,,\"PESSOA_NATURAL"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "PESSOA_JURIDICA\",1,1,Não há restrição,,ENUM"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/partieCompeCode,partieCompeCode,\"Código identificador atribuído pelo Banco Central do Brasil às instituições participantes do STR (Sistema de Transferência de reservas) referente à pessoa envolvida na transação. O número-código substituiu o antigo código COMPE. Todos os participantes do STR, exceto as Infraestruturas do Mercado Financeiro (IMF) e a Secretaria do Tesouro Nacional, possuem um número-código independentemente de participarem da Centralizadora da Compensação de Cheques (Compe). O campo tem a anotação “n/a” (“não se aplica”) para os participantes do STR aos quais não é atribuído um número-código\",Texto,3,Obrigatório,\\d{3}|^NA$,,1,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/partieBranchCode,partieBranchCode,\"Código da Agência detentora da conta da pessoa envolvida na transação. (Agência é a dependência destinada ao atendimento aos clientes, ao público em geral e aos associados de cooperativas de crédito, no exercício de atividades da instituição, não podendo ser móvel ou transitória)\",Texto,4,Obrigatório,\\d{4}|^NA$,,1,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/partieNumber,partieNumber,Número da conta da pessoa envolvida na transação,Texto,20,Obrigatório,\"^\\d{8,20}$|^NA$\",,1,1,Não há restrição,,String"
+    },
+    {
+        "Xpath,Nome,Definição,Tipo do Dado,Tamanho,Mandatoriedade,Formato,Domínio,Mínimo de Ocorrências,Máximo de Ocorrências,Restrições,Nulidade,Tipo Dado Json": "data/partieCheckDigit,partieCheckDigit,Dígito da conta da pessoa envolvida na transação,Texto,1,Obrigatório,\\w*\\W*,,1,1,Não há restrição,,String"
+    }
+]

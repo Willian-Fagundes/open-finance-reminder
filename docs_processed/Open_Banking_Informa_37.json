@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_37.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #37 — 12 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nFoi constatado na noite de ontem (11/08), uma falha na verificação de revogação online dos certifi­\ncados de cliente emitidos abaixo da cadeia ICP Brasil V10, emitidos pela autoridade certificadora \nSerpro - o servidor OCSP da AC apresenta intermitência, não permitindo assim que as instituições \nvalidem os certificados e estabeleçam uma comunicação adequada com outras instituições. Esta \nfalha afeta ao menos 3 (três) instituições participantes da Fase 2, com go -live planejado para ama­\nnhã (13/08). \n \nMembros do subgrupo PKI (GT Segurança) já fizeram contato com o Serpro informando e deta­\nlhando o problema e solicitando suporte de forma emergencial. No momento, o Serpro encontra -se \navaliando o ocorrido, tendo nos informado que trata -se de uma intermitência do sistema deles e \nque devem solucionar ainda hoje. Espera-se um retorno deles nas próximas horas. \n \nNovas atualizações sobre este tema serão oportunamente encaminhadas a todos por este mesmo \ncanal, através de informes oficiais. \n"
-        }
-    ]
-}

@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "acesso_dados_participantes_V2.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \n \nClassificação da informação: Uso Interno \nAcesso a JSON com dados dos participantes \n \nOs participantes do Open Banking Brasil podem ser consultados a partir do arquivo localizado no link abaixo: \nhttps://data.directory.openbankingbrasil.org.br/participants \n \nA lista é composta por todos os participantes cadastrados no diretório do Open Banking. \n \nOs campos que contêm informações relevantes para descoberta dos endpoints para a fase 1 são: \nCampo Descrição \nOrganisationDetalils.OrganisationId O Identificador do participante \nAuthorisationServers.CustomerFriendlyName Nome da marca \nOrganisationDetalils.RegistrationNumber CNPJ \nOrganisationDetalils.RegisteredName Razão Social \nOrgDomainRoleClaim.Role Papel junto ao Open Banking \nOrgDomainRoleClaim.Status Status do papel \nAuthorisationServers.APIResources.APIFamilyTipe \nAuthorisationServers.APIResources.APIVersion \nAuthorisationServers.APIResources.APIEndPoint \nURL das APIs \nAuthorisationServers.DeveloperPortalURI URL da documentação sobre a API do participante \n \nOs campos URL das APIs e URL da documentação sobre a API do participante poderão estar em branco, caso o \nparticipante não seja obrigatório ou ainda caso se trate de um participante voluntário para a fase. "
-        }
-    ]
-}

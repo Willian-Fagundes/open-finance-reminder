@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_24.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #24 — 20 de julho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nJá está disponível, na Área do Desenvolvedor, ajustes na versão 1.0.3 das APIs da Fase 2.  \n \nOs seguintes pontos da API Customers foram alterados: \n• Inclusão no Enum do campo Identificação PN sex de opção ‘NÃO_DISPONIVEL’ \n• Adição no campo Identificação PN hasBrazilianNationality de nullable: True \n \nTambém, foi ajustado o description da API Consents, adicionando o código de erro 422 no método \nde geração do consentimento, caso não restem permissões funcionais suportadas pela  \ntransmissora. \n \nEstes ajustes colocam o portal na versão 7.9.  \n \nAdicionalmente, salientamos que, no Informe #23, foi apresentado que os campos seriam nullable: \nTrue, no entanto essa orientação foi revista, conforme consta neste Informe. \n \nPara maiores detalhes, verifique o changelog no Área do Desenvolvedor. \nACESSE AS APIs FASE 2 "
-        }
-    ]
-}

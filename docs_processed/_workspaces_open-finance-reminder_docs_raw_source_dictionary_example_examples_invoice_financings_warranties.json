@@ -1,0 +1,83 @@
+[
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - warranties": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": "warranties",
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - warranties": "contractId",
+        "Unnamed: 2": "requestDateTime",
+        "Unnamed: 3": "currency",
+        "Unnamed: 4": "warrantyType",
+        "Unnamed: 5": "warrantySubType",
+        "Unnamed: 6": "warrantyAmount"
+    },
+    {
+        "Unnamed: 0": 1.0,
+        "invoiceFinancings - warranties": "xcjklompowsa279212650822221989319aadrtjk",
+        "Unnamed: 2": "2020-07-21T08:30:00Z",
+        "Unnamed: 3": "BRL",
+        "Unnamed: 4": "CESSAO_DIREITOS_CREDITORIOS",
+        "Unnamed: 5": "NOTAS_PROMISSORIAS_OUTROS_DIREITOS_CREDITO",
+        "Unnamed: 6": "200.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - warranties": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": 2.0,
+        "invoiceFinancings - warranties": "29533208100122953320866597501618419473449",
+        "Unnamed: 2": "2020-07-21T08:30:00Z",
+        "Unnamed: 3": "BRL",
+        "Unnamed: 4": "CAUCAO",
+        "Unnamed: 5": "DUPLICATAS",
+        "Unnamed: 6": "2000.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - warranties": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": 3.0,
+        "invoiceFinancings - warranties": "agbvfdrtj1002230688095370jjkloipq0678433123",
+        "Unnamed: 2": "2020-07-21T08:30:00Z",
+        "Unnamed: 3": "BRL",
+        "Unnamed: 4": "CAUCAO",
+        "Unnamed: 5": "FATURA_CARTAO_CREDITO",
+        "Unnamed: 6": "200.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "invoiceFinancings - warranties": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": 4.0,
+        "invoiceFinancings - warranties": "asdfghj8125532706944jkloiu8504713juytr5072",
+        "Unnamed: 2": "2020-07-21T08:30:00Z",
+        "Unnamed: 3": "BRL",
+        "Unnamed: 4": "CESSAO_DIREITOS_CREDITORIOS",
+        "Unnamed: 5": "APLICACOES_FINANCEIRAS_RENDA_FIXA",
+        "Unnamed: 6": "2000.00"
+    }
+]

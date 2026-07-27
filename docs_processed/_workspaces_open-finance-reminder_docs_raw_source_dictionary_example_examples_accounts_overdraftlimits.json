@@ -1,0 +1,74 @@
+[
+    {
+        "Unnamed: 0": NaN,
+        "account": " ",
+        "Unnamed: 2": " ",
+        "Unnamed: 3": " ",
+        "Unnamed: 4": " ",
+        "Unnamed: 5": "balances",
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": "Exemplo",
+        "account": "accountID",
+        "Unnamed: 2": "requestDateTime",
+        "Unnamed: 3": "currency",
+        "Unnamed: 4": "overdraftLimit",
+        "Unnamed: 5": "type",
+        "Unnamed: 6": "amount "
+    },
+    {
+        "Unnamed: 0": "1",
+        "account": "782psd-91md9812ens-0d312'",
+        "Unnamed: 2": "2020-07-21T08:30:00Z'",
+        "Unnamed: 3": "BRL'",
+        "Unnamed: 4": "FAIXA_1",
+        "Unnamed: 5": "VALOR_UTILIZADO_LIMITE",
+        "Unnamed: 6": "500.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "account": " ",
+        "Unnamed: 2": " ",
+        "Unnamed: 3": " ",
+        "Unnamed: 4": " ",
+        "Unnamed: 5": "SALDO_DESCOBERTO",
+        "Unnamed: 6": "52.88"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "account": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": "2",
+        "account": "782psd-91md9812ens-0d312'",
+        "Unnamed: 2": "2020-06-15T08:30:00Z'",
+        "Unnamed: 3": "BRL'",
+        "Unnamed: 4": "FAIXA_2",
+        "Unnamed: 5": "VALOR_UTILIZADO_LIMITE",
+        "Unnamed: 6": "1000.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "account": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN,
+        "Unnamed: 4": NaN,
+        "Unnamed: 5": NaN,
+        "Unnamed: 6": NaN
+    },
+    {
+        "Unnamed: 0": "6",
+        "account": "782psd-91md9812ens-0d312'",
+        "Unnamed: 2": "2020-05-10T08:30:00Z'",
+        "Unnamed: 3": "BRL'",
+        "Unnamed: 4": " ",
+        "Unnamed: 5": "SALDO_DESCOBERTO",
+        "Unnamed: 6": "93.00"
+    }
+]

@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_25.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #25 — 23 de julho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nOs seguintes pontos foram ajustados na API Fase 3: \n• Remoção do scope ‘consent:consentId’ - alteração nos endpoints de payments/v1/consents \n(Post e GET) \n• Alteração do description, acrescentando a possibilidade de acesso no endpoint de consulta \nde pagamento via fluxo clientCredential e regra de validação do clientId \n• Retirada do scope ‘consentID’ – alteração no endpoint de /pix/payments/{paymentId} (GET) \nEstes ajustes foram disponibilizados nessa sexta -feira (23/07), alterando a versão atual do Portal \npara v1.0.0-rc8.0 e a API Fase 3 para v1.0.0-rc5.2.  \nNa próxima semana, serão revistos os perfis de segurança de acesso aos endpoints do Swagger \nda API Fase 3. \nPara maiores detalhes, verifique o changelog na Área do Desenvolvedor. \nACESSE A API FASE 3 \nNessa sexta-feira (23/07), foram disponibilizados os planos de testes para a versão 1.0.3 das APIs \nde consents, resources e customers. \nDIRETRIZES TÉCNICAS DA CERTIFICAÇÃO "
-        }
-    ]
-}

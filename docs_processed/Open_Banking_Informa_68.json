@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_68.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \n \nConfira as últimas atualizações da Estrutura de Governança \nInforme #68 — 11 de outubro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nFoi disponibilizada, nesta segunda-feira (11/10), uma atualização da API Fase 3 para v1.0.1 -rc1.2, \ncontemplando o seguinte ponto: \n• Correção de duplicata do campo ibgeTownCode no response da API Payment \nCom esta atualização, o portal avança para versão v1.0.0-rc9.2. \nPara mais detalhes, verifique o changelog na Área do Desenvolvedor. \nACESSE A API FASE 3 "
-        }
-    ]
-}

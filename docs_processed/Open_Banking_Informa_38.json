@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_38.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #38 — 12 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nConforme o Informe #36 adiantou, foi incluído o campo do CNPJ do iniciador no POST pix/\npayments, como obrigatório para 30/08. \nEste ajuste foi disponibilizado nesta quinta -feira (12/08), colocando o portal na versão v1.0.0 -rc8.4 \ne a API Fase 3 na versão v1.0.0-rc5.5. \nPara mais detalhes, verifique o changelog na Área do Desenvolvedor. \nA previsão para lançamento da versão v1.0.0 da API Fase 3 é para início da próxima semana. \nACESSE A API FASE 3 "
-        }
-    ]
-}

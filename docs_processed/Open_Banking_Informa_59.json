@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_59.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \n \nConfira as últimas atualizações da Estrutura de Governança \nInforme #59 — 23 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nFoi realizada uma atualização na API Fase 3 para versão v1.0.1-rc1.1. Os ajustes contemplam: \n• Melhorias na máquina de estados do consentimento; \n• Inclusão do campo ibgeTownCode no payload do request e do response; \n• Remoção da menção de uso futuro no campo de QRCode, concluindo especificações para \nPix QR Code sem agendamento. \nEstes ajustes foram disponibilizados nesta quinta-feira (23/09). \nPara mais detalhes, verifique o changelog na Área do Desenvolvedor. \nACESSE A API FASE 3 \nFoi realizada a seguinte atualização na seção de problemas conhecidos Fase 2: \n• Inclusão de novos problemas conhecidos no documento de Fase 2, contemplando instruções \npara a certificação da API Credit Card; \nPara mais detalhes, verifique os documentos presentes na seção de problemas conhecidos na \nÁrea do Desenvolvedor. \nACESSE OS PROBLEMAS CONHECIDOS "
-        }
-    ]
-}

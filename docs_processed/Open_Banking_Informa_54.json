@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_54.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \n \nConfira as últimas atualizações da Estrutura de Governança \nInforme #54 — 11 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nFoi adicionada à seção de Problemas Conhecidos o item para especificações da fase 3. Neste item \nestarão as orientações para problemas conhecidos identificados na fase 3 do Open Banking Brasil. \nO arquivo será atualizado conforme novos itens forem identificados. \nEssa primeira publicação apresenta orientação para estados da fase 3: orientação para instituições \nseguirem estados apresentados pela Máquina de Estados, unificando os dois status do Guia de UX \nnum único estado REJECTED. As especificações do swagger estão condizentes com a máquina \nde estados. \nACESSE OS PROBLEMAS CONHECIDOS \nNessa sexta-feira (10/09), foi disponibilizado um Guia Rápido para apoio às Instituições na obten-\nção das certificações de conformidade. O material traz resumidamente informações úteis relaciona-\ndas ao Diretório de Sandbox, Banco Modelo, Iniciadora de pagamento/Instituição recebedora, além \nde links para acesso aos principais canais relacionados as certificações. \nCaso a instituição encontre problemas nos testes ou sinta falta de alguma informação, orientamos \nque seja aberto um chamado no service desk. \nAdicionalmente, informamos que em breve será  disponibilizado um guia completo sobre a utiliza-\nção do Banco Modelo. \nACESSE O GUIA RÁPIDO DE CONFORMIDADE "
-        }
-    ]
-}

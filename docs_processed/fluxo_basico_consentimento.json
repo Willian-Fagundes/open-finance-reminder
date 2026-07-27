@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "fluxo_basico_consentimento.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": "1. Consentimento 2. Envio de informações 3. ConsentID 4. Redirect flow\nUsuário inicia a jornada na \nreceptora fornecendo as \ninformações do \nconsentimento (i.e. \nCPF/CNPJ, agrupamentos de \ndados, transmissora)\nReceptora envia as \ninformações do \nconsentimento a \ntransmissora (i.e. CPF/CNPJ e \nagrupamentos de dados)\nPOST/consents/v1/consents\nTransmissora responde com \no ConsentID e status do \nconsentimento como \n“aguardando autorização”\nReceptora inicia o fluxo de \nredirecionamento pelo \nredirect flow ou decoupled\nflow (CIBA), redirecionando o \nusuário a transmissora\n8. Status do consentimento 7. Consulta do \nconsentimento\n6. Geração do Access Token 5. Autenticação e \nConfirmação\nTransmissora respondendo \ncom o status do consentimento \ncomo “autorizado”\nReceptora consulta o status do \nconsentimento através do \nGET/consents/v1/consents/ \n{consentId}\nTransmissora utiliza do \nauthorization-code para gerar \no Access Token para possibilitar \no acesso aos dados pela \nreceptora\nUsuário se autentica, seleciona \nas origens e confirma as \ninformações do consentimento \nna transmissora\nFluxo detalhado do GT Segurança disponível em: https://openbanking-brasil.github.io/specs-seguranca/tpp-user-guide-ptbr.html#AcessoClientes\nAPI Consents: fluxo básico do consentimento\n"
-        }
-    ]
-}

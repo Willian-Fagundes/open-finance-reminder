@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_44.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #44 — 24 de agosto de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nNesta segunda (23/08), foi disponibilizado o plano de teste para a versão beta do Motor de Confor-\nmidade Funcional da Raidiam, que servirá para certificação funcional das APIs Fase 3. \nReforçamos a todos os participantes que executem os testes de suas implementações, ressaltando \na importância desta etapa para validação do motor. \nACESSE A PLATAFORMA DA RAIDIAM \nInformamos que o Motor de Conformidade FAPI e DCR da OpenID Foundation (OIDF) continua \ndisponível para testes Fase 3 na versão beta. Em função de o motor ainda não ter sido validado, os \npedidos de certificação de segurança Fase 3 ainda não foram abertos. \nRecomendamos que as instituições intensifiquem a realização dos testes e assegurem -se que es-\ntão em conformidade com o motor, visando agilizar o processo de certificação de segurança assim \nque estiver disponível. \nACESSE A PLATAFORMA DA OIDF "
-        }
-    ]
-}

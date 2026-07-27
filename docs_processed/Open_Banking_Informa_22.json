@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_22.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #22 — 15 de julho de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nCom o adiamento do Go Live da Fase 2 de 15/07 para 13/08, informado pelo Banco Central na Re-\nsolução BCB nº 114 de 14/07/2021, informamos que a Plataforma de Resolução de Disputas tam-\nbém terá seu lançamento, anteriormente previsto para hoje (15/07), adiado. \nEm breve providenciaremos mais informações. \nFoi disponibilizada uma primeira versão da FAQ do Service Desk, baseada nas perguntas realiza-\ndas no Workshop ministrado no dia 30/06. \nA FAQ deve ser acessada pela plataforma do Service Desk — é necessário estar logado como \nusuário ou como convidado. \nFAÇA O LOGIN NO SERVICE DESK \nOs seguintes pontos foram ajustados na API Fase 3:  \n• Correção da expressão regular do campo “currency” \n• Alteração na descrição do campo “QR Code” \n• Alteração da expressão regular e do minLength para valor 3 no campo “debtorAccount/\nnumber” \n• Alteração da expressão regular e do minLength para valor 3 no campo “creditorAccount/\nnumber” \n• Alteração na descrição da lista de valores do campo “localInstrument” \nEstes ajustes foram disponibilizados nesta quinta-feira (15/07), colocando o portal na versão v1.0.0\n-rc7.7 e a API Fase 3 na versão v1.0.0-rc5.1.  \nPara maiores detalhes, verifique o changelog na Área do Desenvolvedor. \nACESSE A API FASE 3 \nACESSE A FAQ (APÓS LOGIN) \n1 \n2 "
-        }
-    ]
-}

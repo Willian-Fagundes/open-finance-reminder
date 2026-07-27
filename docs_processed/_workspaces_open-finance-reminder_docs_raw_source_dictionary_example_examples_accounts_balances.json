@@ -1,0 +1,74 @@
+[
+    {
+        "Unnamed: 0": "Exemplo",
+        "data": "avaiableAmount",
+        "Unnamed: 2": "blocked\nAmount",
+        "Unnamed: 3": "automatically\nInvested\nAmount"
+    },
+    {
+        "Unnamed: 0": "1",
+        "data": "600.00",
+        "Unnamed: 2": "800.87",
+        "Unnamed: 3": "0.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "2",
+        "data": "600.00",
+        "Unnamed: 2": "800.87",
+        "Unnamed: 3": "340.00"
+    },
+    {
+        "Unnamed: 0": " ",
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "3",
+        "data": "600.00",
+        "Unnamed: 2": "800.87",
+        "Unnamed: 3": "30.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "4",
+        "data": "600.00",
+        "Unnamed: 2": "800.87",
+        "Unnamed: 3": "500.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "5",
+        "data": "600.00",
+        "Unnamed: 2": "800.87",
+        "Unnamed: 3": "0.00"
+    },
+    {
+        "Unnamed: 0": NaN,
+        "data": NaN,
+        "Unnamed: 2": NaN,
+        "Unnamed: 3": NaN
+    },
+    {
+        "Unnamed: 0": "6",
+        "data": "350.00",
+        "Unnamed: 2": "800.87",
+        "Unnamed: 3": "0.00"
+    }
+]

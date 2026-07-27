@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_49.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \nConfira as últimas atualizações da Estrutura de Governança \nInforme #49 — 01 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nAs seguintes atualizações foram realizadas na planilha de problemas conhecidos Fase 2, localiza-\nda na Área do Desenvolvedor: \n• ID BCLOG-F02-170, campo ResponseAccountTransactions/data: Remoção desta orientação \nvisto que a recente atualização das especificações contempla lista vazia para o campo \n• ID BCLOG-F02-172, campo automaticallyInvestedAmountCurrency: Para o caso de a institui-\nção não ter o valor para o campo amount, ignorar o campo currency, preenchendo o campo \nsempre com valor BRL \n• IDs BCLOG-F02-173 e BCLOG-F02-174, campo disbursementDate: Em caso de uma institui-\nção não atender com data única, como o campo é opcional, não compartilhar nenhuma data \n• IDs BCLOG-F02-175 e BCLOG -F02-176, campo disbursementDate: No caso de uma libera-\nção de recursos feita em D0 mas com referência retroativa feita em D -1, a data correta con-\ntabilmente é  D -1 \nPara maiores detalhes destas atualizações, consultar a planilha de problemas conhecidos Fase 2 \nno Portal Open Banking. \nACESSE OS PROBLEMAS CONHECIDOS FASE 2 "
-        }
-    ]
-}

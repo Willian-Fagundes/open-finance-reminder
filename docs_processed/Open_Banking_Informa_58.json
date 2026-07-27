@@ -1,9 +1,0 @@
-{
-    "arquivo_origem": "Open_Banking_Informa_58.pdf",
-    "pages": [
-        {
-            "pagina": 1,
-            "conteudo": " \n \nConfira as últimas atualizações da Estrutura de Governança \nInforme #58 — 22 de setembro de 2021 \nPara cadastrar ou descadastrar um endereço de e-mail para recebimento dos informes com as últimas atualizações do \nOpen Banking, deve ser enviada requisição para o contato: gt-comunicacao@openbankingbr.org \nNessa segunda-feira (20/09), foi disponibilizado no GitLab um histórico atualizado das alterações \nno motor de conformidade funcional para apoio às Instituições na obtenção das suas certificações.  \nO documento tem como objetivo fornecer uma atualização das alterações 'majors' incorporadas \nnos testes de conformidade. Para obtenção de uma lista completa dos ajustes, os desenvolvedores \ndevem consultar o histórico de 'merge requests' também disponibilizado no Gitlab. \nEstão abertos os envios dos pedidos de certificações funcionais para instituições financeiras da Fa-\nse 2 para APIs Credit Card, Discounted credit rights e Unarranged overdraft do Grupo T2.  \nPara mais detalhes de como realizar a submissão dos resultados dos testes, pedimos que sejam \nseguidas as instruções disponibilizadas no GitLab. \nSalientamos que, conforme Instrução Normativa n°133, a certificação é obrigatória para o registro \ndas APIs no Diretório de Participantes. \nRelembramos que os envios dos pedidos de certificação para APIs Loans e Financing já encontram\n-se abertos.  \nAdicionalmente, informamos que todos os logs são inspecionados manualmente pelo fornecedor \npara validação, portanto, execuções dos testes com sucesso não são garantia de certificação. \nCaso a instituição encontre problemas nos testes, sugerimos que seja aberto um chamado no ser-\nvice desk. \nACESSE O GITLAB ACESSE O SERVICE DESK \nACESSE O HISTÓRICO DE ATUALIZAÇÕES ACESSE HISTÓRICO DE MERGE REQUEST "
-        }
-    ]
-}
