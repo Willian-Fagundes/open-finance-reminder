@@ -1,9 +1,0 @@
-name: "consentId"
-in: "path"
-description: |
-  O consentId é o identificador único do consentimento a ser revogado e deverá ser um URN - Uniform Resource Name.
-required: true
-schema:
-  type: "string"
-  pattern: ^urn:[a-zA-Z0-9][a-zA-Z0-9-]{0,31}:[a-zA-Z0-9()+,\-.:=@;$_!*'%\/?#]+$
-  maxLength: 256

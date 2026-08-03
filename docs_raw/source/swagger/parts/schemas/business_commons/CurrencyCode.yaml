@@ -1,4 +1,0 @@
-type: string
-pattern: '^[A-Z]{3}$'
-description: Moeda referente ao valor monetário, seguindo o modelo ISO-4217.
-example: BRL
