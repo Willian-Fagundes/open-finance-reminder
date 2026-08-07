@@ -13,7 +13,7 @@ load_dotenv(override= True)
 
 HF_TOKEN = os.environ.get("HF_TOKEN")
 BASE_DIR = Path("/workspaces/open-finance-reminder")
-persist_directory = str(BASE_DIR / "agents" / "DB")
+persist_directory = str(BASE_DIR / "data" / "DB")
 kb_path = Path("./kb_content.txt")
 
 def load_txt(path):

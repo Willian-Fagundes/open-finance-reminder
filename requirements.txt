@@ -7,8 +7,10 @@ pyyaml
 pandas 
 python-docx
 langchain
+langchain-groq
 langchain-huggingface
 langchain-text-splitters
 langchain-chroma
 langchain-community
 chromadb
+groq
