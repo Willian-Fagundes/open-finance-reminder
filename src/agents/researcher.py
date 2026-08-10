@@ -1,6 +1,6 @@
 import os
 import chromadb
-from utils import search_web
+from src.utils import search_web
 from state import AgentState
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
