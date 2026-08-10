@@ -1,10 +1,12 @@
 beautifulsoup4
 requests
+chroma
 langchain
 langchain-groq
 langchain-huggingface
 langchain-text-splitters
 langchain-community
+langchain-chroma
 groq
 Flask
 duckduckgo-search
