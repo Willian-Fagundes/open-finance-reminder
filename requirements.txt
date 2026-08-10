@@ -1,11 +1,9 @@
 beautifulsoup4
-chromadb
 requests
 langchain
 langchain-groq
 langchain-huggingface
 langchain-text-splitters
-langchain-chroma
 langchain-community
 groq
 Flask
