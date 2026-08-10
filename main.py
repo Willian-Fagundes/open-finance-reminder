@@ -1,6 +1,6 @@
 import os
 
-from src.web import create_app
+from app import create_app
 
 if __name__ == "__main__":
     app = create_app()
@@ -11,3 +11,4 @@ if __name__ == "__main__":
         app.run(host="0.0.0.0", port=port, ssl_context="adhoc")
     else:
         app.run(host="0.0.0.0", port=port)
+

@@ -3,11 +3,11 @@ from pathlib import Path
 
 from flask import Flask, request, jsonify, render_template
 
-from src.graph import graph
+from graph import graph
 
 
 def create_app():
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent
     templates_path = str(base_dir / "templates")
     static_path = str(base_dir / "static")
 

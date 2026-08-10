@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 url_base = "https://openfinancebrasil.atlassian.net"
 
 def search_page_links(url_base):
-    with open("kb_links.json", "r") as file:
+    with open("./data/links_op.json", "r") as file:
             url_list = json.load(file)
     url_visitados = {item["link"] for item in url_list}
     for data in url_list:
@@ -30,11 +30,11 @@ def search_page_links(url_base):
                         url_list.append({"title" : page_title, "link" : link_href})
                         url_visitados.add(link_href)
                         print(f"Visitado -> Title : {page_title} Link : {link_href}")
-                save_json("kb_links.json", url_list)
+                save_json(url_list)
 
             except requests.exceptions.HTTPError as e:
                 if e.response.status_code == 403:
-                    save_json("kb_links.json", url_list)
+                    save_json(url_list)
                     print("No more links or request error")
         
 def save_json(new_data):
@@ -42,7 +42,7 @@ def save_json(new_data):
     root_folder = Path("/workspaces/open-finance-reminder/data")
     filename = "links_op.json"
 
-    os.makedir(root_folder, exist_ok = True)
+    os.makedirs(root_folder, exist_ok = True)
     filepath = os.path.join(root_folder, filename)
 
     with open (filepath, "r") as file:
@@ -72,7 +72,7 @@ def save_text_file(title, content):
 def extract_text(url_base):
     wiki_links = "/wiki/spaces/OF/"
     
-    with open("kb_links.json", "r") as file:
+    with open("links_op.json", "r") as file:
         url_list = json.load(file)
 
     url_to_go = len(url_list)
@@ -109,3 +109,5 @@ def extract_text(url_base):
     except Exception as e:
                     print(f"Erro em {url_busca}")
                     print(type(e).__name__, e)
+
+search_page_links(url_base)

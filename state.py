@@ -8,18 +8,21 @@ class Findings(TypedDict):
 
 class ResearcherOutput(TypedDict):
     status : str
-    findings : List[Findings]
+    documents : List[Findings]
 
 class APIreference(TypedDict):
     name : str
     description : str
 
 class ProductOutput(TypedDict):
-    topic : str
-    explanation : str
-    api_references : List[APIreference]
-    flows : List[str]
-    notes : List[str]
+    topic: str
+    explanation: str
+    api_references: List[APIreference]
+    flows: List[str]
+    notes: List[str]
+    confidence: float
+    found_in_kb: bool
+    source: Literal["kb", "web_search", "kb + web_search"]
 
 class TechnicalOutput(TypedDict):
     diagnosis: str

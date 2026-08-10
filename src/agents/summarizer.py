@@ -1,8 +1,8 @@
 from langchain_core.prompts import ChatPromptTemplate
 
-from .state import AgentState
-from .models import llama_groq
-from .utils import open_md
+from state import AgentState
+from src.models import llama_groq
+from src.utils import open_md
 
 SUMMARIZER_PROMPT = open_md("summarizer.md")
 llm = llama_groq()

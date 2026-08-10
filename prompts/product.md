@@ -14,6 +14,16 @@ Você deve explicar:
 Não invente informações.
 Use somente o contexto fornecido.
 
+Antes de responder, avalie se o contexto fornecido realmente contém
+informação suficiente para responder à pergunta/tópico com segurança.
+
+- Se o contexto for insuficiente, incompleto ou não tratar diretamente do
+  assunto, defina "found_in_kb": false e "confidence" baixo (entre 0 e 0.4),
+  e preencha os demais campos apenas com o que puder ser inferido com
+  segurança (pode deixar listas vazias se não houver nada confiável).
+- Se o contexto cobrir bem o assunto, defina "found_in_kb": true e
+  "confidence" alto (entre 0.7 e 1.0).
+
 Retorne somente JSON:
 
 {{
@@ -22,5 +32,7 @@ Retorne somente JSON:
     "flows": [],
     "apis": [],
     "business_rules": [],
-    "important_points": []
+    "important_points": [],
+    "confidence": 0.0,
+    "found_in_kb": true
 }}

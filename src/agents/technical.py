@@ -1,9 +1,9 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from .state import AgentState
-from .models import gpt_groq
-from .utils import open_md
+from state import AgentState
+from src.models import gpt_groq
+from src.utils import open_md
 
 TECH_PROMPT =  open_md("technical.md")
 

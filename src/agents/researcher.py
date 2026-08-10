@@ -1,9 +1,11 @@
 import os
 
-from src.state import AgentState
+from state import AgentState
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
+from ddgs import DDGS
+from src.utils import search_web
 
 load_dotenv(override=True)
 
@@ -22,8 +24,8 @@ db = Chroma(
     embedding_function=embedding
 )
 
-def researcher_node(state: AgentState):
 
+def researcher_node(state: AgentState):
     question = state["question"]
     results = db.similarity_search_with_relevance_scores(
         query=question,
@@ -31,10 +33,7 @@ def researcher_node(state: AgentState):
     )
 
     documents = []
-
-
     for document, score in results:
-
         documents.append(
             {
                 "content": document.page_content,
@@ -43,10 +42,36 @@ def researcher_node(state: AgentState):
             }
         )
 
+    return {
+        "retrieved_chunks": documents,
+        "researcher_output": {
+            "status": "success" if documents else "not_found",
+            "documents": documents,
+            "total_documents": len(documents)
+        }
+    }
+
+
+def web_search_node(state: AgentState):
+    query = state["question"]
+    results = search_web(query, max_results=4)
+
+    documents = []
+    for result in results:
+        content = result.get("body") or result.get("text") or result.get("snippet") or ""
+        documents.append(
+            {
+                "content": content,
+                "metadata": {
+                    "source": result.get("href") or result.get("url") or result.get("source", ""),
+                    "title": result.get("title", "")
+                },
+                "score": 0.0
+            }
+        )
 
     return {
         "retrieved_chunks": documents,
-
         "researcher_output": {
             "status": "success" if documents else "not_found",
             "documents": documents,
