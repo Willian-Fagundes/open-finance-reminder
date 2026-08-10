@@ -2,11 +2,11 @@ from langgraph.graph import StateGraph, END
 
 from state import AgentState
 
-from ..src.agents.router import router_node
-from ..src.agents.researcher import researcher_node
-from ..src.agents.product import pm_agent_node
-from ..src.agents.technical import tech_agent_node
-from ..src.agents.summarizer import summarizer_node
+from src.agents.router import router_node
+from src.agents.researcher import researcher_node
+from src.agents.product import pm_agent_node
+from src.agents.technical import tech_agent_node
+from src.agents.summarizer import summarizer_node
 
 workflow = StateGraph(AgentState)
 
