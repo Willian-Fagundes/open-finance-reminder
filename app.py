@@ -56,5 +56,5 @@ def create_app():
     return app
 
 
-# Required by Vercel
+
 app = create_app()

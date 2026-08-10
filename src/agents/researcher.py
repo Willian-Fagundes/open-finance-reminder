@@ -1,16 +1,22 @@
 import os
-
+import chromadb
+from utils import search_web
 from state import AgentState
+from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from dotenv import load_dotenv
-from ddgs import DDGS
-from src.utils import search_web
 
 load_dotenv(override=True)
 
 HF_TOKEN = os.environ.get("HF_TOKEN")
-BD_PATH = "./data/DB"
+CHROMA_API_KEY = os.environ.get("CHROMA_API_KEY")
+CHROMA_TENANT = os.environ.get("CHROMA_TENANT")
+CHROMA_DATABASE = os.environ.get("CHROMA_DATABASE")
+CHROMA_COLLECTION  = os.environ.get("CHROMA_COLLECTION")
+
+chroma_client = chromadb.CloudClient(api_key = CHROMA_API_KEY,
+                                     tenant = CHROMA_TENANT,
+                                     database = CHROMA_DATABASE)
 
 embedding = HuggingFaceEmbeddings(
     model_name="google/embeddinggemma-300m",
@@ -20,7 +26,8 @@ embedding = HuggingFaceEmbeddings(
 )
 
 db = Chroma(
-    persist_directory=BD_PATH,
+    client = chroma_client,
+    collection_name= CHROMA_COLLECTION,
     embedding_function=embedding
 )
 

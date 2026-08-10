@@ -59,7 +59,6 @@ def pm_agent_node(state: AgentState):
     else:
         if kb_documents:
             context_parts.append("Documentação local encontrada:\n\n" + format_document_list(kb_documents))
-    print(context_parts)
     context = "\n\n".join(context_parts) if context_parts else "Nenhuma documentação ou resultado de pesquisa disponível."
     result = pm_chain.invoke({"context": context})
 

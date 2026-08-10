@@ -1,9 +1,10 @@
 
 import time
 import os
-
+import chromadb
 from pathlib import Path
 from dotenv import load_dotenv
+from chromadb import CloudClient
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
@@ -11,10 +12,17 @@ from langchain_chroma.vectorstores import Chroma
 
 load_dotenv(override= True)
 
+CHROMA_API_KEY = os.environ.get("CHROMA_API_KEY")
+CHROMA_TENANT = os.environ.get("CHROMA_TENANT")
+CHROMA_DATABASE = os.environ.get("CHROMA_DATABASE")
+
 HF_TOKEN = os.environ.get("HF_TOKEN")
-BASE_DIR = Path("/workspaces/open-finance-reminder")
-persist_directory = str(BASE_DIR / "data" / "DB")
-kb_path = Path("./kb_content.txt")
+
+kb_text_path = Path("./data/knowledge_base.txt")
+
+chroma_client =  chromadb.CloudClient(api_key = CHROMA_API_KEY,
+                                       tenant= CHROMA_TENANT,
+                                       database= CHROMA_DATABASE)
 
 def load_txt(path):
     loader = TextLoader(str(path), encoding="utf-8")
@@ -41,7 +49,7 @@ def chunk_data(docs):
 def vetorize_chunks(chunks):
     print("starting vetorize process")
     embedding = HuggingFaceEmbeddings(model_name="google/embeddinggemma-300m",  model_kwargs={"token": HF_TOKEN})
-    batch_size = 500
+    batch_size = 300
 
     first_batch = chunks[:batch_size]
     total_batch = len(chunks)
@@ -49,8 +57,8 @@ def vetorize_chunks(chunks):
     db = Chroma.from_documents(
         documents=first_batch,
         embedding=embedding,
-        persist_directory=persist_directory
-    )
+        client=chroma_client,
+        collection_name="langchain")
     print(f"first batch complete...")
 
     print("Waiting 10 seconds...")
@@ -68,5 +76,5 @@ def vetorize_chunks(chunks):
     return db
 
 if __name__ == "__main__":
-    kb = load_txt(kb_path)
+    kb = load_txt(kb_text_path)
     create_db(kb)
