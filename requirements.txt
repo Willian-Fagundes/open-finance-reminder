@@ -1,6 +1,5 @@
 beautifulsoup4
 chromadb
-sentence-transformers
 requests
 langchain
 langchain-groq
