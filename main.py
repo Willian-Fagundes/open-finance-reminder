@@ -1,9 +1,9 @@
 import os
 
-from application import create_app
+from application import create_application
 
 if __name__ == "__main__":
-    app = create_app()
+    app = create_application()
     port = int(os.environ.get("PORT", 7860))
     use_https = os.environ.get("USE_HTTPS", "0").lower() in ("1", "true", "yes")
 
