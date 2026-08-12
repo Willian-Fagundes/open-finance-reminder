@@ -4,7 +4,9 @@ from src.utils import search_web
 from state import AgentState
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
+from huggingface_hub import InferenceClient
+from langchain_core.embeddings import Embeddings
+
 
 load_dotenv(override=True)
 
@@ -14,15 +16,26 @@ CHROMA_TENANT = os.environ.get("CHROMA_TENANT")
 CHROMA_DATABASE = os.environ.get("CHROMA_DATABASE")
 CHROMA_COLLECTION  = os.environ.get("CHROMA_COLLECTION")
 
+class HFRemoteEmbeddings(Embeddings):
+    def __init__(self, model_name: str, token: str):
+        self.client = InferenceClient(model=model_name, token=token)
+
+    def embed_query(self, text: str) -> list[float]:
+        result = self.client.feature_extraction(text)
+        return result[0] if hasattr(result, "__len__") and len(result) and hasattr(result[0], "__len__") else result
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        return [self.embed_query(t) for t in texts]
+
 chroma_client = chromadb.CloudClient(api_key = CHROMA_API_KEY,
                                      tenant = CHROMA_TENANT,
                                      database = CHROMA_DATABASE)
 
-embedding = HuggingFaceEmbeddings(
+
+
+embedding = HFRemoteEmbeddings(
     model_name="google/embeddinggemma-300m",
-    model_kwargs={
-        "token": HF_TOKEN
-    }
+    token=HF_TOKEN
 )
 
 db = Chroma(
