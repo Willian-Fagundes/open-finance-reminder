@@ -6,22 +6,22 @@ from flask import Flask, request, jsonify, render_template
 from graph import graph
 
 
-def create_app():
+def create_application():
     base_dir = Path(__file__).resolve().parent
     templates_path = str(base_dir / "templates")
     static_path = str(base_dir / "static")
 
-    app = Flask(
+    application = Flask(
         __name__,
         template_folder=templates_path,
         static_folder=static_path
     )
 
-    @app.route("/", methods=["GET"])
+    @application.route("/", methods=["GET"])
     def index():
         return render_template("chat.html")
 
-    @app.route("/api/chat", methods=["POST"])
+    @application.route("/api/chat", methods=["POST"])
     def chat():
         payload = request.get_json(silent=True)
 
@@ -53,8 +53,11 @@ def create_app():
                 }
             ), 500
 
-    return app
+    return application
 
 
 
-app = create_app()
+application = create_application()
+
+if __name__ == "__main__":
+    application.run(host="0.0.0.0", port=8000)
