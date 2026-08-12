@@ -12,3 +12,4 @@ Flask
 duckduckgo-search
 ddgs
 gunicorn
+sentence-transformers

@@ -1,3 +1,0 @@
-agents/DB/*.sqlite3 filter=lfs diff=lfs merge=lfs -text
-agents/DB/*.bin filter=lfs diff=lfs merge=lfs -text
-data/DB/chroma.sqlite3 filter=lfs diff=lfs merge=lfs -text
