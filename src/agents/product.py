@@ -32,7 +32,7 @@ def pm_agent_node(state: AgentState):
     confidence = state.get("confidence", 0.0)
     kb_documents = state["researcher_output"]["documents"]
     context_parts = []
-
+    
     if confidence < 0.7:
         web_results = search_web(state["question"], max_results=4)
         web_context = format_search_results(web_results)
