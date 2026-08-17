@@ -18,8 +18,8 @@ def gpt_groq():
     return llm_groq_gpt
 
 def llama_groq():
-    llm_groq_llama = ChatGroq(model = "llama-3.1-8b-instant",
+    llm_groq_gpt2 = ChatGroq(model = "openai/gpt-oss-20b",
                              temperature=0.1, max_tokens = None,
                              timeout=None,
                              api_key=GROQ_API_KEY)
-    return llm_groq_llama
+    return llm_groq_gpt2

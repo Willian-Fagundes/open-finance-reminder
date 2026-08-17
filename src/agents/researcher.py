@@ -33,7 +33,10 @@ db = Chroma(
 
 
 def researcher_node(state: AgentState):
-    question = state["question"]
+    # Usa a pergunta melhorada pelo router se disponível, caso contrário usa a original
+    question = state.get("retrieval_query") or state["question"]
+    original_question = state["question"]
+    
     results = db.similarity_search_with_relevance_scores(
         query=question,
         k=3
@@ -54,7 +57,9 @@ def researcher_node(state: AgentState):
         "researcher_output": {
             "status": "success" if documents else "not_found",
             "documents": documents,
-            "total_documents": len(documents)
+            "total_documents": len(documents),
+            "query_used": question,
+            "original_query": original_question
         }
     }
 
